@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>毕小烦的博客</title>
+  
+  <subtitle>每天学习一点点</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.bixiaofan.com/"/>
+  <updated>2018-01-02T11:46:20.000Z</updated>
+  <id>http://www.bixiaofan.com/</id>
+  
+  <author>
+    <name>毕小烦</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://www.bixiaofan.com/2018/01/02/test/"/>
+    <id>http://www.bixiaofan.com/2018/01/02/test/</id>
+    <published>2018-01-02T11:40:10.000Z</published>
+    <updated>2018-01-02T11:46:20.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;我是用来测试的&quot;&gt;&lt;a href=&quot;#我是用来测试的&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://www.bixiaofan.com/2018/01/02/hello-world/"/>
+    <id>http://www.bixiaofan.com/2018/01/02/hello-world/</id>
+    <published>2018-01-02T09:42:50.000Z</published>
+    <updated>2018-01-21T02:49:07.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
