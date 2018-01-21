@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[test]]></title>
-    <url>%2F2018%2F01%2F02%2Ftest%2F</url>
-    <content type="text"><![CDATA[我是用来测试的]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F01%2F02%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[显示命令的帮助手册-man]]></title>
+    <url>%2F2018%2F01%2F21%2F%E6%98%BE%E7%A4%BA%E5%91%BD%E4%BB%A4%E7%9A%84%E5%B8%AE%E5%8A%A9%E6%89%8B%E5%86%8C-man%2F</url>
+    <content type="text"><![CDATA[man 是 manual（手册）的缩写，用来快速查询某个命令的 man-pages（帮助手册页面），并格式化显示。 常用方法:1234567891011# 显示某个命令的帮助手册$ man 命令名# 显示某个命令帮助手册的位置而不是内容：$ man -w 命令名# 显示帮助手册的搜索路径$ man --path# 查询所有包含某个关键字的帮助手册$ man -k 关键字 实例演示:实例1：显示 sort 命令的帮助手册1~$ man sort 命令执行后会进入帮助手册页面，如图所示。帮助手册页面包括了命令的介绍和用法，以及命令选项的说明。 帮助手册页面其实是进入了less查看模式，只要使用less的快捷键操作来查看页面就可以了，非常方便。 实例2：显示man命令查找帮助手册的路径123456~$ man --path/opt/subversion/man:/Library/Frameworks/Python.framework/Versions/2.7/share/man:/usr/local/share/man:/usr/share/man:/opt/X11/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man# 或 使用man -w,后面不带参数哦。~$ man -w/opt/subversion/man:/Library/Frameworks/Python.framework/Versions/2.7/share/man:/usr/local/share/man:/usr/share/man:/opt/X11/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man 实例3：显示 ssh 命令的帮助手册地址12~$ man -w ssh/usr/share/man/man1/ssh.1 实例4：查询所有包含 awk 的帮助手册1234~$ man -k awkEnglish(3pm) - use nice English (or awk) names for ugly punctuation variablesa2p(1) - Awk to Perl translatorawk(1) - pattern-directed scanning and processing language]]></content>
+      <categories>
+        <category>每天一个Linux命令</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
   </entry>
 </search>
