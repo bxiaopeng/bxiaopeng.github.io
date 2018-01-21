@@ -123,7 +123,7 @@
 
 
 
-  <title>文章分类 | 毕小烦的博客</title>
+  <title>「数据结构和算法」1.解压序列然后赋值给多个变量 | 毕小烦的博客</title>
   
 
 
@@ -277,45 +277,305 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/01/21/「数据结构和算法」1-解压序列然后赋值给多个变量/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="毕小烦">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="毕小烦的博客">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">文章分类</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 2 个分类
+          <h1 class="post-title" itemprop="name headline">「数据结构和算法」1.解压序列然后赋值给多个变量</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-21T17:24:00+08:00">2018-01-21</time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-01-21T17:24:00+08:00">2018-01-21</time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PythonCookbook/" itemprop="url" rel="index">
+                    <span itemprop="name">PythonCookbook</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/01/21/「数据结构和算法」1-解压序列然后赋值给多个变量/" class="leancloud_visitors" data-flag-title="「数据结构和算法」1.解压序列然后赋值给多个变量">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">2k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">0:02</span>
+              
             </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/PythonCookbook/">PythonCookbook</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/每天一个Linux命令/">每天一个Linux命令</a><span class="category-list-count">1</span></li></ul>
-            </div>
-          </div>
-        
-      </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>有一个<strong>元组</strong>或<strong>序列</strong>包含了 N 个元素，如：a_list = [4, 5, 6]</p>
+<p>如何将它里面的值解压后同时<strong>赋值</strong>给 N 个变量呢？</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>任何一个序列（或者可迭代的对象）都可以通过一个简单的赋值语句解压并赋值给多个变量。</p>
+<p>不过，需要注意的一个前提就是：<strong>变量的个数必须跟序列元素的个数相同。</strong></p>
+<p><strong>实例演示：</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 校验把一个「元组」解压并赋值给多个变量</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_unzip_assign_a_tuple</span><span class="params">()</span>:</span></span><br><span class="line">    a_tuple = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)  <span class="comment"># 元组</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把元组解压并赋值给3个变量</span></span><br><span class="line">    t1, t2, t3 = a_tuple</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> t1 == <span class="number">1</span></span><br><span class="line">    <span class="keyword">assert</span> t2 == <span class="number">2</span></span><br><span class="line">    <span class="keyword">assert</span> t3 == <span class="number">3</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 校验把一个「列表」解压并赋值给多个变量</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_unzip_assign_a_list</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="comment"># 列表</span></span><br><span class="line">    a_list = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把列表解压并赋值给3个变量</span></span><br><span class="line">    l1, l2, l3 = a_list</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> l1 == <span class="number">4</span></span><br><span class="line">    <span class="keyword">assert</span> l2 == <span class="number">5</span></span><br><span class="line">    <span class="keyword">assert</span> l3 == <span class="number">6</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 校验把一个「字符串」解压并赋值给多个变量</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_unzip_assign_a_str</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="comment"># 字符串</span></span><br><span class="line">    a_str = <span class="string">"fan"</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把字符串解压并赋值给3个变量</span></span><br><span class="line">    s1, s2, s3 = a_str</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> s1 == <span class="string">"f"</span></span><br><span class="line">    <span class="keyword">assert</span> s2 == <span class="string">"a"</span></span><br><span class="line">    <span class="keyword">assert</span> s3 == <span class="string">"n"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 校验把一个「混合列表」解压并赋值给多个变量</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_unzip_assign_a_mix_list</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="comment"># 混合的列表</span></span><br><span class="line">    mix_list = [<span class="number">4</span>, <span class="number">5</span>, <span class="string">'bi'</span>, (<span class="number">2018</span>, <span class="number">1</span>, <span class="number">21</span>)]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把混合的列表解压并赋值给4个变量</span></span><br><span class="line">    m1, m2, m3, m4 = mix_list</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> m1 == <span class="number">4</span></span><br><span class="line">    <span class="keyword">assert</span> m2 == <span class="number">5</span></span><br><span class="line">    <span class="keyword">assert</span> m3 == <span class="string">'bi'</span></span><br><span class="line">    <span class="keyword">assert</span> m4 == (<span class="number">2018</span>, <span class="number">1</span>, <span class="number">21</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把混合的列表解压并赋值给6个变量</span></span><br><span class="line">    m1, m2, m3, (m4, m5, m6) = mix_list</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> m1 == <span class="number">4</span></span><br><span class="line">    <span class="keyword">assert</span> m2 == <span class="number">5</span></span><br><span class="line">    <span class="keyword">assert</span> m3 == <span class="string">'bi'</span></span><br><span class="line">    <span class="keyword">assert</span> m4 == <span class="number">2018</span></span><br><span class="line">    <span class="keyword">assert</span> m5 == <span class="number">1</span></span><br><span class="line">    <span class="keyword">assert</span> m6 == <span class="number">21</span></span><br></pre></td></tr></table></figure>
+<p>如果我们只想获取一个列表中的一部分值，其他的值并不关心，怎么办呢？</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 校验只解压一部分值并赋值给变量</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_unzip_part</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="comment"># 把不关心的变量使用一些变量占位，这样就可以只获取关心的变量了</span></span><br><span class="line">    _, name, _, gender = [<span class="number">1</span>, <span class="string">"bixiaofan"</span>, <span class="number">2</span>, <span class="string">"帅哥"</span>]</span><br><span class="line">    <span class="keyword">assert</span> name == <span class="string">"bixiaofan"</span></span><br><span class="line">    <span class="keyword">assert</span> gender == <span class="string">"帅哥"</span></span><br></pre></td></tr></table></figure>
+<p>注意：必须要保证用于占位的变量在其他地方没有被使用。</p>
+<blockquote>
+<p>小贴示：</p>
+<p>这种解压赋值可以用在任何可迭代的对象上，不仅限于列表、元组和字符串，文件对象、迭代器和生成器也是可以的。</p>
+</blockquote>
+<p>声明：本系列为《Python Cookbook》读书笔记</p>
+
       
     </div>
     
     
     
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/weichatqcode.jpg" alt="毕小烦 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>「请扫一扫上面的二维码，关注老毕的微信公众号」</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>「您的赞赏是老毕持续创作的动力」</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="毕小烦 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="毕小烦 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    毕小烦
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://www.bixiaofan.com/2018/01/21/「数据结构和算法」1-解压序列然后赋值给多个变量/" title="「数据结构和算法」1.解压序列然后赋值给多个变量">http://www.bixiaofan.com/2018/01/21/「数据结构和算法」1-解压序列然后赋值给多个变量/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+            <a href="/tags/notes/" rel="tag"># notes</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/21/显示命令的帮助手册-man/" rel="next" title="显示命令的帮助手册-man">
+                <i class="fa fa-chevron-left"></i> 显示命令的帮助手册-man
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
   </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="OTc4LzI0NzY0LzE1ODk="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -336,8 +596,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -444,6 +713,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题描述"><span class="nav-number">1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案"><span class="nav-number">2.</span> <span class="nav-text">解决方案</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -610,6 +895,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
