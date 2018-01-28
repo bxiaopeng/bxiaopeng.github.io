@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[如何修改macOS上的命令提示符]]></title>
+    <url>%2F2018%2F01%2F28%2F%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9macOS%E4%B8%8A%E7%9A%84%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6%2F</url>
+    <content type="text"><![CDATA[命令提示符是什么？当我们打开一个终端时首先看到的就是 Bash 命令提示符，格式为： 1用户名@主机名 ~$ 例如： 1bixiaopeng@bixiaopengtekiMacBook-Pro ~$ 查看主机名： 12$ hostnamebixiaopengtekiMacBook-Pro.local 这个提示符太长了，我想修改一下怎么改呢？ 修改命令提示符默认情况下，Bash 命令提示符中最长的就是主机名，我们一起来看一下怎么修改。 修改主机名把主机名改为 macOS： 12$ sudo scutil --set HostName macOSPassword:(输入密码) 新打开一个终端窗口修改才会生效，效果为： 1bixiaopeng@macOS ~$ 配置提示符一些必要的说明Bash 命令提示符是通过环境变量PS1（Prompt String 1） 来设置的，查看现有的设置： 12bixiaopeng@macOS ~$ echo $PS1\[\033[01;33m\]\u@\h\[\033[01;31m\] \W\$\[\033[00m\] 效果是这样的： \[\033[01;33m\] 是颜色，去掉配置的颜色，看得会更清晰一些： 1\u@\h \W\$ 翻译为： 1用户名@主机名 当前工作目录名称$ 配置参数的解释： 12345678\u：用户名\h：主机名\w：当前所在工作目录路径\W：当前工作目录名称，~ 表示主目录\t：当前时间\n：换行\D&#123;%c&#125;：获取本地化的日期和时间\$：使用 $ 作为提示符，如果 root 过的话，则显示 # 尝试配置自己的提示符12345$ PS1="\u@\h \W\$"bixiaopeng@macOS ~$# 给点颜色bixiaopeng@macOS ~$ PS1="\[\033[01;33m\]\u@\h\[\033[01;31m\] \W\$\[\033[00m\] " 效果如下图所示： 上面的命令都可以看作是效果的预览，如果想让配置真正的生效，还需要 export 一下： 12# 接上述命令bixiaopeng@macOS ~$ export PS1 或在接在 ~/.bash_profile 中修改配置： 1export PS1="\[\033[01;33m\]\u@\h\[\033[01;31m\] \W\$\[\033[00m\] "]]></content>
+      <categories>
+        <category>了不起的macOS</category>
+      </categories>
+      <tags>
+        <tag>macOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[品味Python-1.模块-包-库-应用程序]]></title>
+    <url>%2F2018%2F01%2F24%2F%E5%93%81%E5%91%B3Python-1-%E6%90%9E%E6%B8%85%E6%A5%9A%E6%A8%A1%E5%9D%97-%E5%8C%85-%E5%BA%93-%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%2F</url>
+    <content type="text"><![CDATA[Python 中经常会有一些名词让我们感觉似懂非懂，比如：模块（Module）、包（Package）、库（Library）、应用（Application）、框架（Framework），它们是什么？有什么关系？有什么不同？ 今天我们来梳理清楚。 先来看一个项目结构的例子： 1234567├── myapp # 包含 __init__.py 文件的文件夹都叫做包(package)│ ├── __init__.py│ └── utils.py # .py 文件都称为模块(module)├── setup.py├── tests│ ├── __init__.py│ ├── test_help.py 说明： 包含 __init__.py 文件的文件夹叫做「包」，如 requests 和 tests； 所有 .py 文件都叫「模块」，如：__init__.py 和 utils.py； 所有这些代码组成了一个「应用程序」，用于完成某项或多项特定的工作； 本质上「库」、「框架」都是「应用程序」，只不过因为使用场景、提供的功能和解决问题的复杂度有所区分。 来张图可能会更直观一些： 可以再简单一点的理解为： 「函数」和「类」组成了「模块」，多个「模块」组成了「包」，多个「包」或者多个「模块」组成了「应用程序」，「应用程序」具有某些特定功能且作为依赖提供给其他项目使用叫作「库」，提供某一领域解决方案的「库」叫框架。 总结一下： 名词 英文 解释 模块 Module .py 文件都称叫模块。 包 Package 包含 __init__.py 文件的文件夹叫做包。 应用程序 Application 应用程序是完成某项或多项特定功能的代码集合，由包和模块组成。 库 Library 发布在 PYPI 上供他人使用的应用程序叫第三方库，Python 内置的叫标准库，库一般用于解决特定问题，如：requests、sh、arrow、pipenv。 框架 Framework 为解决某一特殊领域的问题而设计的具有一定约束性和支撑性的库叫框架，如 Flask、Django、Selenium、Tensorflow。]]></content>
+      <categories>
+        <category>品味Python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[「数据结构和算法」1.解压序列然后赋值给多个变量]]></title>
     <url>%2F2018%2F01%2F21%2F%E3%80%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E3%80%8D1-%E8%A7%A3%E5%8E%8B%E5%BA%8F%E5%88%97%E7%84%B6%E5%90%8E%E8%B5%8B%E5%80%BC%E7%BB%99%E5%A4%9A%E4%B8%AA%E5%8F%98%E9%87%8F%2F</url>
     <content type="text"><![CDATA[问题描述有一个元组或序列包含了 N 个元素，如：a_list = [4, 5, 6] 如何将它里面的值解压后同时赋值给 N 个变量呢？ 解决方案任何一个序列（或者可迭代的对象）都可以通过一个简单的赋值语句解压并赋值给多个变量。 不过，需要注意的一个前提就是：变量的个数必须跟序列元素的个数相同。 实例演示： 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970# 校验把一个「元组」解压并赋值给多个变量def test_unzip_assign_a_tuple(): a_tuple = (1, 2, 3) # 元组 # 把元组解压并赋值给3个变量 t1, t2, t3 = a_tuple assert t1 == 1 assert t2 == 2 assert t3 == 3# 校验把一个「列表」解压并赋值给多个变量def test_unzip_assign_a_list(): # 列表 a_list = [4, 5, 6] # 把列表解压并赋值给3个变量 l1, l2, l3 = a_list assert l1 == 4 assert l2 == 5 assert l3 == 6# 校验把一个「字符串」解压并赋值给多个变量def test_unzip_assign_a_str(): # 字符串 a_str = "fan" # 把字符串解压并赋值给3个变量 s1, s2, s3 = a_str assert s1 == "f" assert s2 == "a" assert s3 == "n"# 校验把一个「混合列表」解压并赋值给多个变量def test_unzip_assign_a_mix_list(): # 混合的列表 mix_list = [4, 5, 'bi', (2018, 1, 21)] # 把混合的列表解压并赋值给4个变量 m1, m2, m3, m4 = mix_list assert m1 == 4 assert m2 == 5 assert m3 == 'bi' assert m4 == (2018, 1, 21) # 把混合的列表解压并赋值给6个变量 m1, m2, m3, (m4, m5, m6) = mix_list assert m1 == 4 assert m2 == 5 assert m3 == 'bi' assert m4 == 2018 assert m5 == 1 assert m6 == 21# 校验把生成器解压并赋值给多个变量def test_unzip_assign_generator(): a_generator = (x * 2 for x in range(3)) g1, g2, g3 = a_generator assert g1 == 0 assert g2 == 2 assert g3 == 4 如果我们只想获取一个列表中的一部分值，其他的值并不关心，怎么办呢？ 123456# 校验只解压一部分值并赋值给变量def test_unzip_part(): # 把不关心的变量使用一些变量占位，这样就可以只获取关心的变量了 _, name, _, gender = [1, "bixiaofan", 2, "帅哥"] assert name == "bixiaofan" assert gender == "帅哥" 注意：必须要保证用于占位的变量在其他地方没有被使用。 小贴示： 这种解压赋值可以用在任何可迭代的对象上，不仅限于列表、元组和字符串，文件对象、迭代器和生成器也是可以的。]]></content>

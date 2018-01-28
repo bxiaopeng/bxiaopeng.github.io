@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.bixiaofan.com/"/>
-  <updated>2018-01-21T09:24:00.000Z</updated>
+  <updated>2018-01-28T04:15:54.000Z</updated>
   <id>http://www.bixiaofan.com/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何修改macOS上的命令提示符</title>
+    <link href="http://www.bixiaofan.com/2018/01/28/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9macOS%E4%B8%8A%E7%9A%84%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6/"/>
+    <id>http://www.bixiaofan.com/2018/01/28/如何修改macOS上的命令提示符/</id>
+    <published>2018-01-28T04:15:54.000Z</published>
+    <updated>2018-01-28T04:15:54.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;命令提示符是什么？&quot;&gt;&lt;a href=&quot;#命令提示符是什么？&quot; class=&quot;headerlink&quot; title=&quot;命令提示符是什么？&quot;&gt;&lt;/a&gt;命令提示符是什么？&lt;/h2&gt;&lt;p&gt;当我们打开一个终端时首先看到的就是 Bash
+        
+      
+    
+    </summary>
+    
+      <category term="了不起的macOS" scheme="http://www.bixiaofan.com/categories/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84macOS/"/>
+    
+    
+      <category term="macOS" scheme="http://www.bixiaofan.com/tags/macOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>品味Python-1.模块-包-库-应用程序</title>
+    <link href="http://www.bixiaofan.com/2018/01/24/%E5%93%81%E5%91%B3Python-1-%E6%90%9E%E6%B8%85%E6%A5%9A%E6%A8%A1%E5%9D%97-%E5%8C%85-%E5%BA%93-%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/"/>
+    <id>http://www.bixiaofan.com/2018/01/24/品味Python-1-搞清楚模块-包-库-应用程序/</id>
+    <published>2018-01-24T01:41:16.000Z</published>
+    <updated>2018-01-24T01:41:16.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Python
+        
+      
+    
+    </summary>
+    
+      <category term="品味Python" scheme="http://www.bixiaofan.com/categories/%E5%93%81%E5%91%B3Python/"/>
+    
+    
+      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>「数据结构和算法」1.解压序列然后赋值给多个变量</title>
