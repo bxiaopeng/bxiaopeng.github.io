@@ -123,7 +123,7 @@
 
 
 
-  <title>如何修改macOS上的命令提示符 | 毕小烦的博客</title>
+  <title>搞清楚Python中的模块-包-库-应用程序 | 毕小烦的博客</title>
   
 
 
@@ -291,7 +291,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/01/28/如何修改macOS上的命令提示符/">
+    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/01/24/搞清楚Python中的模块-包-库-应用程序/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="毕小烦">
@@ -308,7 +308,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">如何修改macOS上的命令提示符</h1>
+          <h1 class="post-title" itemprop="name headline">搞清楚Python中的模块-包-库-应用程序</h1>
         
 
         <div class="post-meta">
@@ -320,7 +320,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-28T12:15:54+08:00">2018-01-28</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-24T09:41:16+08:00">2018-01-24</time>
             
 
             
@@ -334,7 +334,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-28T12:15:54+08:00">2018-01-28</time>
+              <time title="更新于" itemprop="dateModified" datetime="2018-01-24T09:41:16+08:00">2018-01-24</time>
             
           </span>
 
@@ -351,8 +351,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/了不起的macOS/" itemprop="url" rel="index">
-                    <span itemprop="name">了不起的macOS</span>
+                  <a href="/categories/品味Python/" itemprop="url" rel="index">
+                    <span itemprop="name">品味Python</span>
                   </a>
                 </span>
 
@@ -368,7 +368,7 @@
 
           
           
-             <span id="/2018/01/28/如何修改macOS上的命令提示符/" class="leancloud_visitors" data-flag-title="如何修改macOS上的命令提示符">
+             <span id="/2018/01/24/搞清楚Python中的模块-包-库-应用程序/" class="leancloud_visitors" data-flag-title="搞清楚Python中的模块-包-库-应用程序">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -399,35 +399,58 @@
       
 
       
-        <h2 id="命令提示符是什么？"><a href="#命令提示符是什么？" class="headerlink" title="命令提示符是什么？"></a>命令提示符是什么？</h2><p>当我们打开一个终端时首先看到的就是 Bash 命令提示符，格式为：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户名@主机名 ~$</span><br></pre></td></tr></table></figure>
-<p>例如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bixiaopeng@bixiaopengtekiMacBook-Pro ~$</span><br></pre></td></tr></table></figure>
-<p>查看主机名：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hostname</span><br><span class="line">bixiaopengtekiMacBook-Pro.local</span><br></pre></td></tr></table></figure>
-<p>这个提示符太长了，我想修改一下怎么改呢？</p>
-<h2 id="修改命令提示符"><a href="#修改命令提示符" class="headerlink" title="修改命令提示符"></a>修改命令提示符</h2><p>默认情况下，Bash 命令提示符中最长的就是主机名，我们一起来看一下怎么修改。</p>
-<h3 id="修改主机名"><a href="#修改主机名" class="headerlink" title="修改主机名"></a>修改主机名</h3><p>把主机名改为 macOS：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> sudo scutil --set HostName macOS</span><br><span class="line">Password:(输入密码)</span><br></pre></td></tr></table></figure>
-<p>新打开一个终端窗口修改才会生效，效果为：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bixiaopeng@macOS ~$</span><br></pre></td></tr></table></figure>
-<h3 id="配置提示符"><a href="#配置提示符" class="headerlink" title="配置提示符"></a>配置提示符</h3><h4 id="一些必要的说明"><a href="#一些必要的说明" class="headerlink" title="一些必要的说明"></a>一些必要的说明</h4><p>Bash 命令提示符是通过环境变量<code>PS1</code>（Prompt String 1） 来设置的，查看现有的设置：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bixiaopeng@macOS ~$ echo $PS1</span><br><span class="line">\[\033[01;33m\]\u@\h\[\033[01;31m\] \W\$\[\033[00m\]</span><br></pre></td></tr></table></figure>
-<p>效果是这样的：</p>
-<p><img src="http://p31qst5ip.bkt.clouddn.com/macos/001-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%8F%90%E7%A4%BA%E7%AC%A6%E7%9A%84%E9%A2%9C%E8%89%B2.png" alt=""></p>
-<p><code>\[\033[01;33m\]</code> 是颜色，去掉配置的颜色，看得会更清晰一些：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\u@\h \W\$</span><br></pre></td></tr></table></figure>
-<p>翻译为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户名@主机名 当前工作目录名称$</span><br></pre></td></tr></table></figure>
-<p>配置参数的解释：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">\u：用户名</span><br><span class="line">\h：主机名</span><br><span class="line">\w：当前所在工作目录路径</span><br><span class="line">\W：当前工作目录名称，~ 表示主目录</span><br><span class="line">\t：当前时间</span><br><span class="line">\n：换行</span><br><span class="line">\D&#123;%c&#125;：获取本地化的日期和时间</span><br><span class="line">\$：使用 $ 作为提示符，如果 root 过的话，则显示 #</span><br></pre></td></tr></table></figure>
-<h4 id="尝试配置自己的提示符"><a href="#尝试配置自己的提示符" class="headerlink" title="尝试配置自己的提示符"></a>尝试配置自己的提示符</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> PS1="\u@\h \W\$"</span><br><span class="line">bixiaopeng@macOS ~$</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 给点颜色</span><br><span class="line">bixiaopeng@macOS ~$ PS1="\[\033[01;33m\]\u@\h\[\033[01;31m\] \W\$\[\033[00m\] "</span><br></pre></td></tr></table></figure>
-<p>效果如下图所示：</p>
-<p><img src="http://p31qst5ip.bkt.clouddn.com/macos/001-%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%8F%90%E7%A4%BA%E7%AC%A6%E7%9A%84%E9%A2%9C%E8%89%B2.png" alt=""></p>
-<p>上面的命令都可以看作是效果的预览，如果想让配置真正的生效，还需要 export 一下：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 接上述命令</span><br><span class="line">bixiaopeng@macOS ~$ export PS1</span><br></pre></td></tr></table></figure>
-<p>或在接在 ~/.bash_profile 中修改配置：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PS1="\[\033[01;33m\]\u@\h\[\033[01;31m\] \W\$\[\033[00m\] "</span><br></pre></td></tr></table></figure>
+        <p>Python 中经常会有一些名词让我们感觉似懂非懂，比如：模块（Module）、包（Package）、库（Library）、应用（Application）、框架（Framework），它们是什么？有什么关系？有什么不同？</p>
+<p>今天我们来梳理清楚。</p>
+<p>先来看一个项目结构的例子：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">├── myapp           # 包含 __init__.py 文件的文件夹都叫做包(package)</span><br><span class="line">│   ├── __init__.py</span><br><span class="line">│   └── utils.py       # .py 文件都称为模块(module)</span><br><span class="line">├── setup.py</span><br><span class="line">├── tests</span><br><span class="line">│   ├── __init__.py</span><br><span class="line">│   ├── test_help.py</span><br></pre></td></tr></table></figure>
+<p>说明：</p>
+<ul>
+<li>包含 <code>__init__.py</code> 文件的文件夹叫做<strong>「包」</strong>，如 requests 和 tests；</li>
+<li>所有 .py 文件都叫「模块」，如：<code>__init__.py</code> 和 utils.py；</li>
+<li>所有这些代码组成了一个「应用程序」，用于完成某项或多项特定的工作；</li>
+<li>本质上「库」、「框架」都是「应用程序」，只不过因为使用场景、提供的功能和解决问题的复杂度有所区分。</li>
+</ul>
+<p><strong>来张图可能会更直观一些：</strong></p>
+<p><img src="http://p31qst5ip.bkt.clouddn.com/python/003-python-basic-module-pag-lib.png" alt=""></p>
+<p><strong>可以再简单一点的理解为：</strong></p>
+<p>「函数」和「类」组成了「模块」，多个「模块」组成了「包」，多个「包」或者多个「模块」组成了「应用程序」，「应用程序」具有某些特定功能且作为依赖提供给其他项目使用叫作「库」，提供某一领域解决方案的「库」叫框架。</p>
+<p>总结一下：</p>
+<table>
+<thead>
+<tr>
+<th>名词</th>
+<th>英文</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模块</td>
+<td>Module</td>
+<td><code>.py</code> 文件都称叫<strong>模块</strong>。</td>
+</tr>
+<tr>
+<td>包</td>
+<td>Package</td>
+<td>包含 <code>__init__.py</code> 文件的文件夹叫做<strong>包</strong>。</td>
+</tr>
+<tr>
+<td>应用程序</td>
+<td>Application</td>
+<td><strong>应用程序</strong>是完成某项或多项特定功能的代码集合，由包和模块组成。</td>
+</tr>
+<tr>
+<td>库</td>
+<td>Library</td>
+<td>发布在 PYPI 上供他人使用的应用程序叫<strong>第三方库</strong>，Python 内置的叫<strong>标准库</strong>，<strong>库</strong>一般用于解决特定问题，如：requests、sh、arrow、pipenv。</td>
+</tr>
+<tr>
+<td>框架</td>
+<td>Framework</td>
+<td>为解决某一特殊领域的问题而设计的具有一定约束性和支撑性的库叫框架，如 Flask、Django、Selenium、Tensorflow。</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -485,7 +508,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://www.bixiaofan.com/2018/01/28/如何修改macOS上的命令提示符/" title="如何修改macOS上的命令提示符">http://www.bixiaofan.com/2018/01/28/如何修改macOS上的命令提示符/</a>
+    <a href="http://www.bixiaofan.com/2018/01/24/搞清楚Python中的模块-包-库-应用程序/" title="搞清楚Python中的模块-包-库-应用程序">http://www.bixiaofan.com/2018/01/24/搞清楚Python中的模块-包-库-应用程序/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -500,7 +523,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/macOS/" rel="tag"># macOS</a>
+            <a href="/tags/python/" rel="tag"># python</a>
           
         </div>
       
@@ -513,8 +536,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/24/搞清楚Python中的模块-包-库-应用程序/" rel="next" title="搞清楚Python中的模块-包-库-应用程序">
-                <i class="fa fa-chevron-left"></i> 搞清楚Python中的模块-包-库-应用程序
+              <a href="/2018/01/21/「数据结构和算法」1-解压序列然后赋值给多个变量/" rel="next" title="「数据结构和算法」1.解压序列然后赋值给多个变量">
+                <i class="fa fa-chevron-left"></i> 「数据结构和算法」1.解压序列然后赋值给多个变量
               </a>
             
           </div>
@@ -522,6 +545,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/28/如何修改macOS上的命令提示符/" rel="prev" title="如何修改macOS上的命令提示符">
+                如何修改macOS上的命令提示符 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -581,17 +608,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -698,22 +716,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#命令提示符是什么？"><span class="nav-number">1.</span> <span class="nav-text">命令提示符是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改命令提示符"><span class="nav-number">2.</span> <span class="nav-text">修改命令提示符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改主机名"><span class="nav-number">2.1.</span> <span class="nav-text">修改主机名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置提示符"><span class="nav-number">2.2.</span> <span class="nav-text">配置提示符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一些必要的说明"><span class="nav-number">2.2.1.</span> <span class="nav-text">一些必要的说明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#尝试配置自己的提示符"><span class="nav-number">2.2.2.</span> <span class="nav-text">尝试配置自己的提示符</span></a></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       

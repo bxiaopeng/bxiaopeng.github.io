@@ -12,8 +12,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[品味Python-1.模块-包-库-应用程序]]></title>
-    <url>%2F2018%2F01%2F24%2F%E5%93%81%E5%91%B3Python-1-%E6%90%9E%E6%B8%85%E6%A5%9A%E6%A8%A1%E5%9D%97-%E5%8C%85-%E5%BA%93-%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%2F</url>
+    <title><![CDATA[搞清楚Python中的模块-包-库-应用程序]]></title>
+    <url>%2F2018%2F01%2F24%2F%E6%90%9E%E6%B8%85%E6%A5%9APython%E4%B8%AD%E7%9A%84%E6%A8%A1%E5%9D%97-%E5%8C%85-%E5%BA%93-%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%2F</url>
     <content type="text"><![CDATA[Python 中经常会有一些名词让我们感觉似懂非懂，比如：模块（Module）、包（Package）、库（Library）、应用（Application）、框架（Framework），它们是什么？有什么关系？有什么不同？ 今天我们来梳理清楚。 先来看一个项目结构的例子： 1234567├── myapp # 包含 __init__.py 文件的文件夹都叫做包(package)│ ├── __init__.py│ └── utils.py # .py 文件都称为模块(module)├── setup.py├── tests│ ├── __init__.py│ ├── test_help.py 说明： 包含 __init__.py 文件的文件夹叫做「包」，如 requests 和 tests； 所有 .py 文件都叫「模块」，如：__init__.py 和 utils.py； 所有这些代码组成了一个「应用程序」，用于完成某项或多项特定的工作； 本质上「库」、「框架」都是「应用程序」，只不过因为使用场景、提供的功能和解决问题的复杂度有所区分。 来张图可能会更直观一些： 可以再简单一点的理解为： 「函数」和「类」组成了「模块」，多个「模块」组成了「包」，多个「包」或者多个「模块」组成了「应用程序」，「应用程序」具有某些特定功能且作为依赖提供给其他项目使用叫作「库」，提供某一领域解决方案的「库」叫框架。 总结一下： 名词 英文 解释 模块 Module .py 文件都称叫模块。 包 Package 包含 __init__.py 文件的文件夹叫做包。 应用程序 Application 应用程序是完成某项或多项特定功能的代码集合，由包和模块组成。 库 Library 发布在 PYPI 上供他人使用的应用程序叫第三方库，Python 内置的叫标准库，库一般用于解决特定问题，如：requests、sh、arrow、pipenv。 框架 Framework 为解决某一特殊领域的问题而设计的具有一定约束性和支撑性的库叫框架，如 Flask、Django、Selenium、Tensorflow。]]></content>
       <categories>
         <category>品味Python</category>
