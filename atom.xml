@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.bixiaofan.com/"/>
-  <updated>2018-04-03T04:03:06.000Z</updated>
+  <updated>2018-04-04T01:37:52.000Z</updated>
   <id>http://www.bixiaofan.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据结构和算法」6-字典中的键映射多个值</title>
+    <link href="http://www.bixiaofan.com/2018/04/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E3%80%8D6-%E5%AD%97%E5%85%B8%E4%B8%AD%E7%9A%84%E9%94%AE%E6%98%A0%E5%B0%84%E5%A4%9A%E4%B8%AA%E5%80%BC/"/>
+    <id>http://www.bixiaofan.com/2018/04/04/数据结构和算法」6-字典中的键映射多个值/</id>
+    <published>2018-04-04T01:37:52.000Z</published>
+    <updated>2018-04-04T01:37:52.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;怎样实现&lt;strong&gt;一个键对应多个值&lt;/strong&gt;的字典（也叫
+        
+      
+    
+    </summary>
+    
+      <category term="PythonCookbook" scheme="http://www.bixiaofan.com/categories/PythonCookbook/"/>
+    
+    
+      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
+    
+      <category term="note" scheme="http://www.bixiaofan.com/tags/note/"/>
+    
+  </entry>
   
   <entry>
     <title>「数据结构和算法」5-实现一个优先级队列</title>
