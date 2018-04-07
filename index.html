@@ -292,7 +292,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/04/04/数据结构和算法」6-字典中的键映射多个值/">
+    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/04/07/「数据结构和算法」7-字典排序/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="毕小烦">
@@ -311,7 +311,180 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/04/数据结构和算法」6-字典中的键映射多个值/" itemprop="url">数据结构和算法」6-字典中的键映射多个值</a></h1>
+                <a class="post-title-link" href="/2018/04/07/「数据结构和算法」7-字典排序/" itemprop="url">「数据结构和算法」7-字典排序</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-07T09:41:15+08:00">2018-04-07</time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-07T09:41:15+08:00">2018-04-07</time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PythonCookbook/" itemprop="url" rel="index">
+                    <span itemprop="name">PythonCookbook</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/04/07/「数据结构和算法」7-字典排序/" class="leancloud_visitors" data-flag-title="「数据结构和算法」7-字典排序">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>假如我们想创建一个字典，并且在迭代或序列化这个字典的时候能够控制元素的顺序。如何实现呢？</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>为了能控制字典中元素的顺序，我们可以使用 <code>collections</code> 模块中的 <code>OrderedDict</code> 类。 </p>
+<p>在迭代操作的时候 <code>OrderedDict</code> 会保持元素被插入时的顺序。</p>
+<p>代码示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> OrderedDict</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_ordereddict</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">"""使用OrderedDict保持字典中元素的顺序"""</span></span><br><span class="line">    od = OrderedDict()</span><br><span class="line">    <span class="comment"># 向字典中插入元素</span></span><br><span class="line">    od[<span class="string">'one'</span>] = <span class="number">1</span></span><br><span class="line">    od[<span class="string">'two'</span>] = <span class="number">2</span></span><br><span class="line">    od[<span class="string">'three'</span>] = <span class="number">3</span></span><br><span class="line">    od[<span class="string">'four'</span>] = <span class="number">4</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 获取字典的值时，顺序没变哦</span></span><br><span class="line">    <span class="keyword">assert</span> list(od.values()) == [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 遍历时,顺序也是没变的哦</span></span><br><span class="line">    <span class="keyword">for</span> key <span class="keyword">in</span> od:</span><br><span class="line">        print(key, od[key])</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 序列化时顺序也是保持不变的</span></span><br><span class="line">    <span class="keyword">assert</span> json.dumps(od) == &#123;<span class="string">"one"</span>: <span class="number">1</span>, <span class="string">"two"</span>: <span class="number">2</span>, <span class="string">"three"</span>: <span class="number">3</span>, <span class="string">"four"</span>: <span class="number">4</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>从上面的例子可以看出，如果我们想精确控制使用 JSON 编码后「字段的顺序」，可以使用 <code>OrderedDict</code> 来构建这样的数据。</p>
+<h2 id="扩展讨论"><a href="#扩展讨论" class="headerlink" title="扩展讨论"></a>扩展讨论</h2><p><code>OrderedDict</code> 内部维护着一个根据键插入顺序排序的<strong>双向链表</strong>。</p>
+<p>每次当一个新的元素插入进来的时候， 它会被放到<strong>链表的尾部</strong>。<strong>对于一个已经存在的键的重复赋值</strong>不会改变键的顺序。</p>
+<p>需要注意的是，</p>
+<p>一个 <code>OrderedDict</code> 的大小是一个普通字典的<strong>两倍</strong>，因为<strong>它内部维护着另外一个链表</strong>。</p>
+<p>所以如果你要构建一个需要大量 <code>OrderedDict</code> 实例的数据结构的时候（比如读取 100,000 行 CSV 数据到一个 <code>OrderedDict</code> 列表中去）， 那么你就得仔细权衡一下是否使用 <code>OrderedDict</code> 带来的好处要大过额外内存消耗的影响。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/04/04/「数据结构和算法」6-字典中的键映射多个值/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="毕小烦">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="毕小烦的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/04/「数据结构和算法」6-字典中的键映射多个值/" itemprop="url">「数据结构和算法」6-字典中的键映射多个值</a></h1>
         
 
         <div class="post-meta">
@@ -371,7 +544,7 @@
 
           
           
-             <span id="/2018/04/04/数据结构和算法」6-字典中的键映射多个值/" class="leancloud_visitors" data-flag-title="数据结构和算法」6-字典中的键映射多个值">
+             <span id="/2018/04/04/「数据结构和算法」6-字典中的键映射多个值/" class="leancloud_visitors" data-flag-title="「数据结构和算法」6-字典中的键映射多个值">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1980,180 +2153,13 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/01/21/显示命令的帮助手册-man/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="毕小烦">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="毕小烦的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/21/显示命令的帮助手册-man/" itemprop="url">显示命令的帮助手册-man</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-21T14:22:57+08:00">2018-01-21</time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-21T14:22:57+08:00">2018-01-21</time>
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/每天一个Linux命令/" itemprop="url" rel="index">
-                    <span itemprop="name">每天一个Linux命令</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/01/21/显示命令的帮助手册-man/" class="leancloud_visitors" data-flag-title="显示命令的帮助手册-man">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>man 是 manual（手册）的缩写，用来快速查询某个命令的 man-pages（帮助手册页面），并格式化显示。</p>
-<h3 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法:"></a>常用方法:</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 显示某个命令的帮助手册</span><br><span class="line"><span class="meta">$</span> man 命令名</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 显示某个命令帮助手册的位置而不是内容：</span><br><span class="line"><span class="meta">$</span> man -w 命令名</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 显示帮助手册的搜索路径</span><br><span class="line"><span class="meta">$</span> man --path</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 查询所有包含某个关键字的帮助手册</span><br><span class="line"><span class="meta">$</span> man -k 关键字</span><br></pre></td></tr></table></figure>
-<h3 id="实例演示"><a href="#实例演示" class="headerlink" title="实例演示:"></a>实例演示:</h3><h4 id="实例1：显示-sort-命令的帮助手册"><a href="#实例1：显示-sort-命令的帮助手册" class="headerlink" title="实例1：显示 sort 命令的帮助手册"></a>实例1：显示 sort 命令的帮助手册</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~$ man sort</span><br></pre></td></tr></table></figure>
-<p>命令执行后会进入帮助手册页面，如图所示。帮助手册页面包括了命令的介绍和用法，以及命令选项的说明。</p>
-<p><img src="/images/001-linux-man.png" alt=""></p>
-<p>帮助手册页面其实是进入了less查看模式，只要使用less的快捷键操作来查看页面就可以了，非常方便。</p>
-<h4 id="实例2：显示man命令查找帮助手册的路径"><a href="#实例2：显示man命令查找帮助手册的路径" class="headerlink" title="实例2：显示man命令查找帮助手册的路径"></a>实例2：显示man命令查找帮助手册的路径</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">~$ man --path</span><br><span class="line">/opt/subversion/man:/Library/Frameworks/Python.framework/Versions/2.7/share/man:/usr/local/share/man:/usr/share/man:/opt/X11/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 或 使用man -w,后面不带参数哦。</span><br><span class="line">~$ man -w</span><br><span class="line">/opt/subversion/man:/Library/Frameworks/Python.framework/Versions/2.7/share/man:/usr/local/share/man:/usr/share/man:/opt/X11/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man</span><br></pre></td></tr></table></figure>
-<h4 id="实例3：显示-ssh-命令的帮助手册地址"><a href="#实例3：显示-ssh-命令的帮助手册地址" class="headerlink" title="实例3：显示 ssh 命令的帮助手册地址"></a>实例3：显示 ssh 命令的帮助手册地址</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">~$ man -w ssh</span><br><span class="line">/usr/share/man/man1/ssh.1</span><br></pre></td></tr></table></figure>
-<h4 id="实例4：查询所有包含-awk-的帮助手册"><a href="#实例4：查询所有包含-awk-的帮助手册" class="headerlink" title="实例4：查询所有包含 awk 的帮助手册"></a>实例4：查询所有包含 awk 的帮助手册</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">~$ man -k awk</span><br><span class="line">English(3pm)             - use nice English (or awk) names for ugly punctuation variables</span><br><span class="line">a2p(1)                   - Awk to Perl translator</span><br><span class="line">awk(1)                   - pattern-directed scanning and processing language</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -2198,7 +2204,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>

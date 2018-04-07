@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[数据结构和算法」6-字典中的键映射多个值]]></title>
-    <url>%2F2018%2F04%2F04%2F%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E3%80%8D6-%E5%AD%97%E5%85%B8%E4%B8%AD%E7%9A%84%E9%94%AE%E6%98%A0%E5%B0%84%E5%A4%9A%E4%B8%AA%E5%80%BC%2F</url>
+    <title><![CDATA[「数据结构和算法」7-字典排序]]></title>
+    <url>%2F2018%2F04%2F07%2F%E3%80%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E3%80%8D7-%E5%AD%97%E5%85%B8%E6%8E%92%E5%BA%8F%2F</url>
+    <content type="text"><![CDATA[问题描述假如我们想创建一个字典，并且在迭代或序列化这个字典的时候能够控制元素的顺序。如何实现呢？ 解决方案为了能控制字典中元素的顺序，我们可以使用 collections 模块中的 OrderedDict 类。 在迭代操作的时候 OrderedDict 会保持元素被插入时的顺序。 代码示例： 1234567891011121314151617181920212223from collections import OrderedDictimport jsondef test_ordereddict(): """使用OrderedDict保持字典中元素的顺序""" od = OrderedDict() # 向字典中插入元素 od['one'] = 1 od['two'] = 2 od['three'] = 3 od['four'] = 4 # 获取字典的值时，顺序没变哦 assert list(od.values()) == [1, 2, 3, 4] # 遍历时,顺序也是没变的哦 for key in od: print(key, od[key]) # 序列化时顺序也是保持不变的 assert json.dumps(od) == &#123;"one": 1, "two": 2, "three": 3, "four": 4&#125; 从上面的例子可以看出，如果我们想精确控制使用 JSON 编码后「字段的顺序」，可以使用 OrderedDict 来构建这样的数据。 扩展讨论OrderedDict 内部维护着一个根据键插入顺序排序的双向链表。 每次当一个新的元素插入进来的时候， 它会被放到链表的尾部。对于一个已经存在的键的重复赋值不会改变键的顺序。 需要注意的是， 一个 OrderedDict 的大小是一个普通字典的两倍，因为它内部维护着另外一个链表。 所以如果你要构建一个需要大量 OrderedDict 实例的数据结构的时候（比如读取 100,000 行 CSV 数据到一个 OrderedDict 列表中去）， 那么你就得仔细权衡一下是否使用 OrderedDict 带来的好处要大过额外内存消耗的影响。]]></content>
+      <categories>
+        <category>PythonCookbook</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>note</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[「数据结构和算法」6-字典中的键映射多个值]]></title>
+    <url>%2F2018%2F04%2F04%2F%E3%80%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E3%80%8D6-%E5%AD%97%E5%85%B8%E4%B8%AD%E7%9A%84%E9%94%AE%E6%98%A0%E5%B0%84%E5%A4%9A%E4%B8%AA%E5%80%BC%2F</url>
     <content type="text"><![CDATA[问题描述怎样实现一个键对应多个值的字典（也叫 multidict）？ 解决方案我们都知道一个字典就是一个键对应一个单值的映射。 如：{&quot;one&quot;:1} 可如果我们想要让一个键映射多个值，那么就需要将这多个值放到另外的容器（列表或集合）中。 如：{&quot;one&quot;:[1,2,3,4]} 选择使用列表还是集合取决于你的实际需求。 如果你想保持元素的插入顺序就应该使用列表。 如果想去掉重复元素就使用集合（并且不关心元素的顺序）。 使用 defaultdict我们可以很方便的使用 collections 模块中的 defaultdict 来构造这样的字典。 defaultdict 的一个特征是它会自动初始化每个 key 刚开始对应的值，所以我们只需要关注添加元素操作就行了。 比如： 12345678910111213141516171819202122232425262728293031from collections import defaultdictdef test_multidict_use_defaultdict(): """使用defaultdict创建多值字典""" # 用列表来存储多个值，会保持元素的插入顺序，且不会去掉重复的元素 d = defaultdict(list) # 向「键」中加入多个值 d['name'].append("张三") d['name'].append("李四") d['name'].append("王二") d['name'].append("王二") d['age'].append(20) assert d.get('name') == ['张三', '李四', '王二', '王二'] assert d.get('age') == [20] # 用集合来存储多个值，会去掉重复的元素，且不关心元素顺序 d2 = defaultdict(set) d2['name'].add("张三") d2['name'].add("李四") d2['name'].add("王二") d2['name'].add("王二") d2['name'].add("王二") d2['name'].add("王二") d2['age'].add(20) assert d2.get('name') == &#123;'李四', '张三', '王二'&#125; assert d2.get('age') == &#123;20&#125; 需要注意的是， defaultdict 会自动为将要访问的键（就算目前字典中并不存在这样的键）创建映射实体。 如果我们不需要这样的特性，可以在一个普通的字典上使用 setdefault() 方法来代替。 使用 setdefault使用setdefault创建多值字典，比如： 12345678910def test_multidict_use_setdefault(): """使用setdefault创建多值字典""" d = &#123;&#125; # 一个普通的字典 d.setdefault('a', []).append(1) # 每次都要创建一个新的初始值实例 d.setdefault('a', []).append(2) d.setdefault('b', []).append(4) assert d.get('a') == [1, 2] assert d.get('b') == [4] 但是很多程序员觉得 setdefault() 用起来有点别扭。因为每次调用都得创建一个新的初始值的实例（例子程序中的空列表 [] ）。 自已动手一般来讲，创建一个多值映射字典是很简单的。 但是，如果你选择自己实现的话，那么对于值的初始化可能会有点麻烦。 你可能会像下面这样来实现： 12345d = &#123;&#125;for key, value in pairs: if key not in d: d[key] = [] d[key].append(value) 如果使用 defaultdict 的话代码就更加简洁了： 123d = defaultdict(list)for key, value in pairs: d[key].append(value)]]></content>
       <categories>
         <category>PythonCookbook</category>

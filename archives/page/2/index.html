@@ -123,7 +123,7 @@
 
 
 
-  <title>「类与对象」1-改变对象实例的字符串显示 | 毕小烦的博客</title>
+  <title>归档 | 毕小烦的博客</title>
   
 
 
@@ -152,7 +152,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left page-archive">
     <div class="headband"></div>
 
     
@@ -275,298 +275,82 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
 
-  
+      <span class="archive-page-counter">
+        
+        
+        
+          
+        
+        嗯..! 目前共计 11 篇日志。 继续努力。
+      </span>
 
-  
-  
-  
+      
 
-  
+        
+        
+        
+
+        
+          
+          <div class="collection-title">
+            <h1 class="archive-year" id="archive-year-2018">2018</h1>
+          </div>
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/04/03/「类与对象」1-改变对象实例的字符串显示/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="毕小烦">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="毕小烦的博客">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+            <a class="post-title-link" href="/2018/01/21/显示命令的帮助手册-man/" itemprop="url">
+              
+                <span itemprop="name">显示命令的帮助手册-man</span>
+              
+            </a>
         
-          <h1 class="post-title" itemprop="name headline">「类与对象」1-改变对象实例的字符串显示</h1>
-        
+      </h2>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-03T10:35:39+08:00">2018-04-03</time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2018-04-03T10:35:39+08:00">2018-04-03</time>
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PythonCookbook/" itemprop="url" rel="index">
-                    <span itemprop="name">PythonCookbook</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/04/03/「类与对象」1-改变对象实例的字符串显示/" class="leancloud_visitors" data-flag-title="「类与对象」1-改变对象实例的字符串显示">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>如果我们想改变对象实例的打印或显示输出，让它们更具可读性，应该怎么做呢？</p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>想要改变一个对象实例的字符串显示，可重新定义它的 <code>__str__()</code> 和 <code>__repr__()</code> 方法。</p>
-<p>代码演示：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Pair</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, x, y)</span>:</span></span><br><span class="line">        self.x = x</span><br><span class="line">        self.y = y</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__repr__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">'Pair(&#123;0.x!r&#125;, &#123;0.y!r&#125;)'</span>.format(self)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__str__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">'(&#123;0.x!s&#125;, &#123;0.y!s&#125;)'</span>.format(self)</span><br></pre></td></tr></table></figure>
-<p><code>__repr__()</code> 方法返回一个<strong>实例的代码表示形式</strong>，通常<strong>用来重新构造这个实例</strong>。 内置的 <code>repr()</code> 函数返回这个字符串，跟我们使用<strong>交互式解释器显示的值是一样的</strong>。</p>
-<p> <code>__str__()</code> 方法将实例转换为一个字符串，使用 <code>str()</code> 或 <code>print()</code> 函数会输出这个字符串。</p>
-<blockquote>
-<p>简而言之：</p>
-<p>如果要把一个实例通过 print 显示成字符串，就要实现 <code>__str__()</code>，如果要在交互命令行下直接通过调用实例显示，就要实现 <code>__repr__()</code> 。</p>
-</blockquote>
-<p>代码示例：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span>&gt;&gt; p = Pair(3, 4)</span><br><span class="line"><span class="meta">&gt;</span>&gt;&gt; p</span><br><span class="line">Pair(3, 4) # 输出的是 __repr__() </span><br><span class="line"><span class="meta">&gt;</span>&gt;&gt; print(p)</span><br><span class="line">(3, 4) # 输出的是 __str__() </span><br><span class="line"><span class="meta">&gt;</span>&gt;&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="扩展讨论"><a href="#扩展讨论" class="headerlink" title="扩展讨论"></a>扩展讨论</h2><h3 id="为何要自定义-repr-和-str-？"><a href="#为何要自定义-repr-和-str-？" class="headerlink" title="为何要自定义 __repr__() 和 __str__() ？"></a>为何要自定义 <code>__repr__()</code> 和 <code>__str__()</code> ？</h3><p>自定义 <code>__repr__()</code> 和 <code>__str__()</code> 通常是很好的习惯，因为它能<strong>简化调试和实例输出</strong>。 </p>
-<p>例如，对于某个对象的实例，如果我们仅仅只是打印输出或日志输出，那么我们就会看到更加详细与有用的实例信息。</p>
-<blockquote>
-<p>简而言之：</p>
-<p><code>__repr__()</code> 是给程序员看的。</p>
-<p><code>__str__()</code> 是给用户看的。</p>
-</blockquote>
-<h3 id="几种格式化方法"><a href="#几种格式化方法" class="headerlink" title="几种格式化方法"></a>几种格式化方法</h3><p>上面的例子中我们还演示了<strong>在格式化的时候怎样使用不同的字符串表现形式。</strong> </p>
-<h4 id="r-格式化代码"><a href="#r-格式化代码" class="headerlink" title="!r 格式化代码"></a><code>!r</code> 格式化代码</h4><p><code>!r</code> 格式化代码指明输出使用 <code>__repr__()</code> 来代替默认的 <code>__str__()</code> 。 </p>
-<p>用前面的类来测试一下：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span>&gt;&gt; p = Pair(3, 4)</span><br><span class="line"><span class="meta">&gt;</span>&gt;&gt; print('p is &#123;0!r&#125;'.format(p))</span><br><span class="line">p is Pair(3, 4)   # 使用 !r 格式化后输出的是 __repr__()</span><br><span class="line"><span class="meta">&gt;</span>&gt;&gt; print('p is &#123;0&#125;'.format(p))</span><br><span class="line">p is (3, 4) # 没有格式化的默认输出是 __str__()</span><br><span class="line"><span class="meta">&gt;</span>&gt;&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="0-x-格式化代码"><a href="#0-x-格式化代码" class="headerlink" title="{0.x} 格式化代码"></a><code>{0.x}</code> 格式化代码</h4><p>上面的 <code>format()</code> 方法的使用看上去很有趣，格式化代码 <code>{0.x}</code> 对应的是<strong>第 1 个参数的 x 属性</strong>。 </p>
-<p>因此，在下面的方法中，0 实际上指的就是 <code>self</code> 本身。</p>
-<p>示例代码：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">def __repr__(self):</span><br><span class="line">    return 'Pair(&#123;0.x!r&#125;, &#123;0.y!r&#125;)'.format(self)</span><br></pre></td></tr></table></figure>
-<h4 id="格式化代码"><a href="#格式化代码" class="headerlink" title="% 格式化代码"></a><code>%</code> 格式化代码</h4><p>作为上面这种实现的一个替代，我们也可以使用 <code>%</code> 操作符。</p>
-<p>示例代码：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">def __repr__(self):</span><br><span class="line">    return 'Pair(%r, %r)' % (self.x, self.y)</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    
-    
-    
-
-    
-      <div>
-        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
-    <img id="wechat_subscriber_qcode" src="/images/weichatqcode.jpg" alt="毕小烦 wechat" style="width: 200px; max-width: 100%;"/>
-    <div>「请扫一扫上面的二维码，关注老毕的微信公众号」</div>
-</div>
-
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-01-21T14:22:57+08:00"
+              content="2018-01-21" >
+          01-21
+        </time>
       </div>
-    
 
-    
-      <div>
-        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>「您的赞赏是老毕持续创作的动力」</div>
-  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-    <span>打赏</span>
-  </button>
-  <div id="QR" style="display: none;">
-
-    
-      <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/wechatpay.png" alt="毕小烦 微信支付"/>
-        <p>微信支付</p>
-      </div>
-    
-
-    
-      <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/alipay.png" alt="毕小烦 支付宝"/>
-        <p>支付宝</p>
-      </div>
-    
-
-    
-
-  </div>
-</div>
-
-      </div>
-    
-
-    
-      <div>
-        <ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>本文作者：</strong>
-    毕小烦
-  </li>
-  <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="http://www.bixiaofan.com/2018/04/03/「类与对象」1-改变对象实例的字符串显示/" title="「类与对象」1-改变对象实例的字符串显示">http://www.bixiaofan.com/2018/04/03/「类与对象」1-改变对象实例的字符串显示/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>版权声明： </strong>
-    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
-  </li>
-</ul>
-
-      </div>
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/python/" rel="tag"># python</a>
-          
-            <a href="/tags/notes/" rel="tag"># notes</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/03/13/「数据结构和算法」4-查找最大或最小的 N 个元素/" rel="next" title="「数据结构和算法」4-查找最大或最小的N个元素">
-                <i class="fa fa-chevron-left"></i> 「数据结构和算法」4-查找最大或最小的N个元素
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/03/「数据结构和算法」5-实现一个优先级队列/" rel="prev" title="「数据结构和算法」5-实现一个优先级队列">
-                「数据结构和算法」5-实现一个优先级队列 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
 
-    <div class="post-spread">
       
-        
-<script>
-  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
-</script>
 
-      
     </div>
   </div>
+  
+  
+  
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/archives/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
+  </nav>
+
+
 
 
           </div>
           
-
-  
-    <div class="comments" id="comments">
-      <div id="lv-container" data-id="city" data-uid="OTc4LzI0NzY0LzE1ODk="></div>
-    </div>
-
-  
-
-
 
         </div>
         
@@ -587,17 +371,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -704,22 +479,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题描述"><span class="nav-number">1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案"><span class="nav-number">2.</span> <span class="nav-text">解决方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展讨论"><span class="nav-number">3.</span> <span class="nav-text">扩展讨论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#为何要自定义-repr-和-str-？"><span class="nav-number">3.1.</span> <span class="nav-text">为何要自定义 __repr__() 和 __str__() ？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#几种格式化方法"><span class="nav-number">3.2.</span> <span class="nav-text">几种格式化方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#r-格式化代码"><span class="nav-number">3.2.1.</span> <span class="nav-text">!r 格式化代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0-x-格式化代码"><span class="nav-number">3.2.2.</span> <span class="nav-text">{0.x} 格式化代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#格式化代码"><span class="nav-number">3.2.3.</span> <span class="nav-text">% 格式化代码</span></a></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -844,10 +603,6 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=6.0.1"></script>
-
-
 
   
 
@@ -872,17 +627,6 @@
 
 
 
-  
-    <script type="text/javascript">
-      (function(d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    </script>
   
 
 
