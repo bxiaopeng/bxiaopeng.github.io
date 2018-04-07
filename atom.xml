@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.bixiaofan.com/"/>
-  <updated>2018-04-07T01:41:15.000Z</updated>
+  <updated>2018-04-07T02:29:26.000Z</updated>
   <id>http://www.bixiaofan.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>「数据结构和算法」8-字典的运算</title>
+    <link href="http://www.bixiaofan.com/2018/04/07/%E3%80%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E3%80%8D8-%E5%AD%97%E5%85%B8%E7%9A%84%E8%BF%90%E7%AE%97/"/>
+    <id>http://www.bixiaofan.com/2018/04/07/「数据结构和算法」8-字典的运算/</id>
+    <published>2018-04-07T02:29:26.000Z</published>
+    <updated>2018-04-07T02:29:26.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="PythonCookbook" scheme="http://www.bixiaofan.com/categories/PythonCookbook/"/>
+    
+    
+      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
+    
+      <category term="note" scheme="http://www.bixiaofan.com/tags/note/"/>
+    
+  </entry>
   
   <entry>
     <title>「数据结构和算法」7-字典排序</title>
