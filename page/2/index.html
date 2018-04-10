@@ -79,17 +79,20 @@
 
 
 
-<meta name="description" content="「持续学习，每天进步一点点」">
+<meta name="description" content="电子书《Markdown实用指南》 《AndroidStudio实用指南》">
 <meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://www.bixiaofan.com/tags/index.html">
+<meta property="og:title" content="我的作品">
+<meta property="og:url" content="http://www.bixiaofan.com/books/index.html">
 <meta property="og:site_name" content="毕小烦的博客">
-<meta property="og:description" content="「持续学习，每天进步一点点」">
+<meta property="og:description" content="电子书《Markdown实用指南》 《AndroidStudio实用指南》">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-21T06:41:33.000Z">
+<meta property="og:image" content="http://p31qst5ip.bkt.clouddn.com/md/%E5%B0%81%E9%9D%A2-new.png">
+<meta property="og:image" content="https://gss0.baidu.com/7LsWdDW5_xN3otqbppnN2DJv/doc/pic/item/cdbf6c81800a19d8c3c6976734fa828ba71e468e.jpg">
+<meta property="og:updated_time" content="2018-01-28T04:35:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
-<meta name="twitter:description" content="「持续学习，每天进步一点点」">
+<meta name="twitter:title" content="我的作品">
+<meta name="twitter:description" content="电子书《Markdown实用指南》 《AndroidStudio实用指南》">
+<meta name="twitter:image" content="http://p31qst5ip.bkt.clouddn.com/md/%E5%B0%81%E9%9D%A2-new.png">
 
 
 
@@ -117,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="http://www.bixiaofan.com/tags/"/>
+  <link rel="canonical" href="http://www.bixiaofan.com/books/"/>
 
 
 
@@ -292,7 +295,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/01/21/「数据结构和算法」1-解压序列然后赋值给多个变量/">
+    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/04/09/数据结构和算法-11-给切片命名/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="毕小烦">
@@ -311,7 +314,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/01/21/「数据结构和算法」1-解压序列然后赋值给多个变量/" itemprop="url">「数据结构和算法」1.解压序列然后赋值给多个变量</a></h1>
+                <a class="post-title-link" href="/2018/04/09/数据结构和算法-11-给切片命名/" itemprop="url">数据结构和算法-11-给切片命名</a></h1>
         
 
         <div class="post-meta">
@@ -323,7 +326,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-21T17:24:00+08:00">2018-01-21</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-09T09:50:42+08:00">2018-04-09</time>
             
 
             
@@ -337,7 +340,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-21T17:24:00+08:00">2018-01-21</time>
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-09T09:50:42+08:00">2018-04-09</time>
             
           </span>
 
@@ -371,7 +374,7 @@
 
           
           
-             <span id="/2018/01/21/「数据结构和算法」1-解压序列然后赋值给多个变量/" class="leancloud_visitors" data-flag-title="「数据结构和算法」1.解压序列然后赋值给多个变量">
+             <span id="/2018/04/09/数据结构和算法-11-给切片命名/" class="leancloud_visitors" data-flag-title="数据结构和算法-11-给切片命名">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -404,18 +407,1092 @@
       
         
           
-            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>有一个<strong>元组</strong>或<strong>序列</strong>包含了 N 个元素，如：a_list = [4, 5, 6]</p>
-<p>如何将它里面的值解压后同时<strong>赋值</strong>给 N 个变量呢？</p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>任何一个序列（或者可迭代的对象）都可以通过一个简单的赋值语句解压并赋值给多个变量。</p>
-<p>不过，需要注意的一个前提就是：<strong>变量的个数必须跟序列元素的个数相同。</strong></p>
-<p><strong>实例演示：</strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 校验把一个「元组」解压并赋值给多个变量</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_unzip_assign_a_tuple</span><span class="params">()</span>:</span></span><br><span class="line">    a_tuple = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)  <span class="comment"># 元组</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把元组解压并赋值给3个变量</span></span><br><span class="line">    t1, t2, t3 = a_tuple</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> t1 == <span class="number">1</span></span><br><span class="line">    <span class="keyword">assert</span> t2 == <span class="number">2</span></span><br><span class="line">    <span class="keyword">assert</span> t3 == <span class="number">3</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 校验把一个「列表」解压并赋值给多个变量</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_unzip_assign_a_list</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="comment"># 列表</span></span><br><span class="line">    a_list = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把列表解压并赋值给3个变量</span></span><br><span class="line">    l1, l2, l3 = a_list</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> l1 == <span class="number">4</span></span><br><span class="line">    <span class="keyword">assert</span> l2 == <span class="number">5</span></span><br><span class="line">    <span class="keyword">assert</span> l3 == <span class="number">6</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 校验把一个「字符串」解压并赋值给多个变量</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_unzip_assign_a_str</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="comment"># 字符串</span></span><br><span class="line">    a_str = <span class="string">"fan"</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把字符串解压并赋值给3个变量</span></span><br><span class="line">    s1, s2, s3 = a_str</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> s1 == <span class="string">"f"</span></span><br><span class="line">    <span class="keyword">assert</span> s2 == <span class="string">"a"</span></span><br><span class="line">    <span class="keyword">assert</span> s3 == <span class="string">"n"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 校验把一个「混合列表」解压并赋值给多个变量</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_unzip_assign_a_mix_list</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="comment"># 混合的列表</span></span><br><span class="line">    mix_list = [<span class="number">4</span>, <span class="number">5</span>, <span class="string">'bi'</span>, (<span class="number">2018</span>, <span class="number">1</span>, <span class="number">21</span>)]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把混合的列表解压并赋值给4个变量</span></span><br><span class="line">    m1, m2, m3, m4 = mix_list</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> m1 == <span class="number">4</span></span><br><span class="line">    <span class="keyword">assert</span> m2 == <span class="number">5</span></span><br><span class="line">    <span class="keyword">assert</span> m3 == <span class="string">'bi'</span></span><br><span class="line">    <span class="keyword">assert</span> m4 == (<span class="number">2018</span>, <span class="number">1</span>, <span class="number">21</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把混合的列表解压并赋值给6个变量</span></span><br><span class="line">    m1, m2, m3, (m4, m5, m6) = mix_list</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> m1 == <span class="number">4</span></span><br><span class="line">    <span class="keyword">assert</span> m2 == <span class="number">5</span></span><br><span class="line">    <span class="keyword">assert</span> m3 == <span class="string">'bi'</span></span><br><span class="line">    <span class="keyword">assert</span> m4 == <span class="number">2018</span></span><br><span class="line">    <span class="keyword">assert</span> m5 == <span class="number">1</span></span><br><span class="line">    <span class="keyword">assert</span> m6 == <span class="number">21</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 校验把生成器解压并赋值给多个变量</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_unzip_assign_generator</span><span class="params">()</span>:</span></span><br><span class="line">    a_generator = (x * <span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">3</span>))</span><br><span class="line">    g1, g2, g3 = a_generator</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> g1 == <span class="number">0</span></span><br><span class="line">    <span class="keyword">assert</span> g2 == <span class="number">2</span></span><br><span class="line">    <span class="keyword">assert</span> g3 == <span class="number">4</span></span><br></pre></td></tr></table></figure>
-<p>如果我们只想获取一个列表中的一部分值，其他的值并不关心，怎么办呢？</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 校验只解压一部分值并赋值给变量</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_unzip_part</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="comment"># 把不关心的变量使用一些变量占位，这样就可以只获取关心的变量了</span></span><br><span class="line">    _, name, _, gender = [<span class="number">1</span>, <span class="string">"bixiaofan"</span>, <span class="number">2</span>, <span class="string">"帅哥"</span>]</span><br><span class="line">    <span class="keyword">assert</span> name == <span class="string">"bixiaofan"</span></span><br><span class="line">    <span class="keyword">assert</span> gender == <span class="string">"帅哥"</span></span><br></pre></td></tr></table></figure>
-<p>注意：必须要保证用于占位的变量在其他地方没有被使用。</p>
+            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>假如我们的程序已经出现了一大堆已无法直视的硬编码切片下标，应该如何清理呢？</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>假设我们有一段代码要<strong>从一个记录字符串中</strong>几个<strong>固定位置</strong>提<strong>取出特定的数据字段</strong>。</p>
+<p>比如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">######    0123456789012345678901234567890123456789012345678901234567890'</span></span><br><span class="line">record = <span class="string">'....................100 .......513.25 ..........'</span></span><br><span class="line">cost = int(record[<span class="number">20</span>:<span class="number">23</span>]) * float(record[<span class="number">31</span>:<span class="number">37</span>])</span><br></pre></td></tr></table></figure>
+<p>上面切片的写法可读性非常差，如果给切片命个名，可读性就会强很多。</p>
+<p>改进代码，使其可读性更好：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SHARES = slice(<span class="number">20</span>, <span class="number">23</span>)  <span class="comment"># 给切片命名</span></span><br><span class="line">PRICE = slice(<span class="number">31</span>, <span class="number">37</span>) <span class="comment"># 给切片命名</span></span><br><span class="line">cost = int(record[SHARES]) * float(record[PRICE]) <span class="comment"># 使用命名的切片</span></span><br></pre></td></tr></table></figure>
+<h2 id="扩展讨论"><a href="#扩展讨论" class="headerlink" title="扩展讨论"></a>扩展讨论</h2><p>一般来讲，代码中如果出现大量的<strong>硬编码下标值</strong>会使得可读性和可维护性大大降低，给切片命名可以更加清晰的表达代码到底要做什么，可读性非常高。</p>
+<p>内置的 <code>slice()</code> 函数创建了一个<strong>切片对象</strong>，<strong>可以被用在任何切片允许使用的地方</strong>。</p>
+<p>比如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>items = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = slice(<span class="number">2</span>, <span class="number">4</span>)  <span class="comment"># 给切片命名</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>items[<span class="number">2</span>:<span class="number">4</span>]</span><br><span class="line">[<span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>items[a]</span><br><span class="line">[<span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>items[a] = [<span class="number">10</span>,<span class="number">11</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>items</span><br><span class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">del</span> items[a]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>items</span><br><span class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br></pre></td></tr></table></figure>
+<p>如果我们有一个切片对象 a，那么就可以分别调用它的 <code>a.start</code> , <code>a.stop</code> , <code>a.step</code> 属性来获取更多的信息。</p>
+<p>比如：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span>&gt;&gt; a = slice(5, 50, 2)</span><br><span class="line"><span class="meta">&gt;</span>&gt;&gt; a.start</span><br><span class="line">5</span><br><span class="line"><span class="meta">&gt;</span>&gt;&gt; a.stop</span><br><span class="line">50</span><br><span class="line"><span class="meta">&gt;</span>&gt;&gt; a.step</span><br><span class="line">2</span><br><span class="line"><span class="meta">&gt;</span>&gt;&gt;</span><br></pre></td></tr></table></figure>
+<p>另外，我们还能通过调用切片的 <code>indices(size)</code> 方法将它映射到一个<strong>确定大小的序列</strong>上， 这个方法返回一个三元组 <code>(start, stop, step)</code> ，<strong>所有值都会被合适的缩小以满足边界限制</strong>， 从而使用的时候避免出现 <code>IndexError</code> 异常。</p>
+<p>比如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'HelloWorld'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a.indices(len(s))</span><br><span class="line">(<span class="number">5</span>, <span class="number">10</span>, <span class="number">2</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> i <span class="keyword">in</span> range(*a.indices(len(s))):</span><br><span class="line"><span class="meta">... </span>    print(s[i])</span><br><span class="line">...</span><br><span class="line">W</span><br><span class="line">r</span><br><span class="line">d</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/04/09/数据结构和算法-10-删除序列中重复的元素并保持顺序不变/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="毕小烦">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="毕小烦的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/09/数据结构和算法-10-删除序列中重复的元素并保持顺序不变/" itemprop="url">数据结构和算法-10-删除序列中重复的元素并保持顺序不变</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-09T09:49:50+08:00">2018-04-09</time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-09T09:49:50+08:00">2018-04-09</time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PythonCookbook/" itemprop="url" rel="index">
+                    <span itemprop="name">PythonCookbook</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/04/09/数据结构和算法-10-删除序列中重复的元素并保持顺序不变/" class="leancloud_visitors" data-flag-title="数据结构和算法-10-删除序列中重复的元素并保持顺序不变">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>怎样在一个序列中删除重复的元素并保持元素顺序不变？</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>如果序列上的值都是 <code>hashable</code> 类型，那么可以很简单的利用<strong>集合或者生成器</strong>来解决这个问题。</p>
+<p>比如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dedupe</span><span class="params">(items)</span>:</span></span><br><span class="line">    seen = set()</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> items:</span><br><span class="line">        <span class="keyword">if</span> item <span class="keyword">not</span> <span class="keyword">in</span> seen:</span><br><span class="line">            <span class="keyword">yield</span> item</span><br><span class="line">            seen.add(item)</span><br></pre></td></tr></table></figure>
+<p>下面是使用上述函数的例子：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span>&gt;&gt; a = [1, 5, 2, 1, 9, 1, 5, 10]</span><br><span class="line"><span class="meta">&gt;</span>&gt;&gt; list(dedupe(a))</span><br><span class="line">[1, 5, 2, 9, 10]</span><br><span class="line"><span class="meta">&gt;</span>&gt;&gt;</span><br></pre></td></tr></table></figure>
+<p>这个方法仅仅在序列中元素为 <code>hashable</code> 的时候才管用。 </p>
+<p>如果我们想消除<strong>元素不可哈希</strong>的序列（比如 <code>dict</code>类型）中重复元素的话，需要将上述代码稍微改变一下，就像这样：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dedupe</span><span class="params">(items, key=None)</span>:</span></span><br><span class="line">    seen = set()</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> items:</span><br><span class="line">        val = item <span class="keyword">if</span> key <span class="keyword">is</span> <span class="keyword">None</span> <span class="keyword">else</span> key(item)</span><br><span class="line">        <span class="keyword">if</span> val <span class="keyword">not</span> <span class="keyword">in</span> seen:</span><br><span class="line">            <span class="keyword">yield</span> item</span><br><span class="line">            seen.add(val)</span><br></pre></td></tr></table></figure>
+<p>这里的 key 参数指定了一个函数，将序列元素转换成 <code>hashable</code> 类型。</p>
+<p>下面是它的用法示例：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span>&gt;&gt; a = [ &#123;'x':1, 'y':2&#125;, &#123;'x':1, 'y':3&#125;, &#123;'x':1, 'y':2&#125;, &#123;'x':2, 'y':4&#125;]</span><br><span class="line"><span class="meta">&gt;</span>&gt;&gt; list(dedupe(a, key=lambda d: (d['x'],d['y'])))</span><br><span class="line">[&#123;'x': 1, 'y': 2&#125;, &#123;'x': 1, 'y': 3&#125;, &#123;'x': 2, 'y': 4&#125;]</span><br><span class="line"><span class="meta">&gt;</span>&gt;&gt; list(dedupe(a, key=lambda d: d['x']))</span><br><span class="line">[&#123;'x': 1, 'y': 2&#125;, &#123;'x': 2, 'y': 4&#125;]</span><br><span class="line"><span class="meta">&gt;</span>&gt;&gt;</span><br></pre></td></tr></table></figure>
+<p>如果你想基于单个字段、属性或者某个更大的数据结构来消除重复元素，第二种方案同样可以胜任。</p>
+<h2 id="扩展讨论"><a href="#扩展讨论" class="headerlink" title="扩展讨论"></a>扩展讨论</h2><p>如果我们仅仅就是想消除重复元素，通常可以简单的<strong>构造一个集合</strong>。</p>
+<p>比如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line">[<span class="number">1</span>, <span class="number">5</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">9</span>, <span class="number">1</span>, <span class="number">5</span>, <span class="number">10</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>set(a)</span><br><span class="line">&#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">10</span>, <span class="number">5</span>, <span class="number">9</span>&#125;</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+<p>然而，<strong>这种方法不能维护元素的顺序</strong>，<strong>生成的结果中的元素位置被打乱，</strong>而上面的方法可以避免这种情况。</p>
+<p>在本节中我们使用了生成器函数让我们的函数更加通用，不仅仅是局限于列表处理。 </p>
+<p>比如，如果我们想读取一个文件，消除重复行，可以这样做：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(somefile,<span class="string">'r'</span>) <span class="keyword">as</span> f:</span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> dedupe(f):</span><br><span class="line">    ...</span><br></pre></td></tr></table></figure>
+<p>上述 key 函数参数模仿了 <code>sorted()</code> , <code>min()</code> 和 <code>max()</code> 等内置函数的相似功能。 </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/04/09/数据结构和算法-9-查找两个字典的相同点/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="毕小烦">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="毕小烦的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/09/数据结构和算法-9-查找两个字典的相同点/" itemprop="url">数据结构和算法-9-查找两个字典的相同点</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-09T09:49:09+08:00">2018-04-09</time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-09T09:49:09+08:00">2018-04-09</time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PythonCookbook/" itemprop="url" rel="index">
+                    <span itemprop="name">PythonCookbook</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/04/09/数据结构和算法-9-查找两个字典的相同点/" class="leancloud_visitors" data-flag-title="数据结构和算法-9-查找两个字典的相同点">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>怎样在两个字典中寻找相同点呢？（比如相同的键或相同的值）</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>考虑下面两个字典：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">a = &#123;</span><br><span class="line">    <span class="string">'x'</span> : <span class="number">1</span>,</span><br><span class="line">    <span class="string">'y'</span> : <span class="number">2</span>,</span><br><span class="line">    <span class="string">'z'</span> : <span class="number">3</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">b = &#123;</span><br><span class="line">    <span class="string">'w'</span> : <span class="number">10</span>,</span><br><span class="line">    <span class="string">'x'</span> : <span class="number">11</span>,</span><br><span class="line">    <span class="string">'y'</span> : <span class="number">2</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>为了寻找两个字典的相同点，可以简单的在两个字典的 <code>keys()</code> 或 <code>items()</code> 返回的结果上<strong>执行集合操作</strong>。</p>
+<p>比如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 找出两个字典相同的 key</span></span><br><span class="line">a.keys() &amp; b.keys() <span class="comment"># &#123; 'x', 'y' &#125;</span></span><br><span class="line"><span class="comment"># 找出a中有，但b中无的 key</span></span><br><span class="line">a.keys() - b.keys() <span class="comment"># &#123; 'z' &#125;</span></span><br><span class="line"><span class="comment"># 找出两个字典中 key 和 value 都相同的元素</span></span><br><span class="line">a.items() &amp; b.items() <span class="comment"># &#123; ('y', 2) &#125;</span></span><br></pre></td></tr></table></figure>
+<p>这些操作<strong>也可以用于修改或者过滤字典元素</strong>。 </p>
+<p>比如，假如我们想以<strong>现有字典</strong>构造一个<strong>排除了几个指定「键」的新字典</strong>。 </p>
+<p>利用字典推导来实现这样的需求：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 先从字典 a 中删除「键」 &#123;'z','w'&#125;，再遍历 a.keys() 生成一个新的字典</span></span><br><span class="line">c = &#123;key:a[key] <span class="keyword">for</span> key <span class="keyword">in</span> a.keys() - &#123;<span class="string">'z'</span>, <span class="string">'w'</span>&#125;&#125;</span><br><span class="line"><span class="comment"># c is &#123;'x': 1, 'y': 2&#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="更多讨论"><a href="#更多讨论" class="headerlink" title="更多讨论"></a>更多讨论</h2><p>一个字典就是<strong>一个键集合与值集合的映射关系</strong>。 </p>
+<p>字典的 <code>keys()</code> 方法返回一个展现「键」集合的<strong>键视图对象</strong>。 </p>
+<p><strong>键视图</strong>的一个很少被了解的特性就是它们也<strong>支持集合操作</strong>，比如<strong>集合并、交、差运算</strong>。 </p>
+<p>所以，如果我们想对集合的「键」执行一些普通的集合操作，可以直接使用键视图对象而不用先将它们转换成一个 set。</p>
+<p>字典的 <code>items()</code> 方法返回一个包含 (键，值) 对的元素视图对象。 这个对象同样也支持集合操作，并且可以<strong>被用来查找两个字典有哪些相同的键值对</strong>。</p>
+<p>尽管字典的 <code>values()</code> 方法也是类似，但是它并不支持这里介绍的集合操作。 某种程度上是因为值视图不能保证所有的值互不相同，这样会导致某些集合操作会出现问题。 </p>
+<p>不过，如果硬要在「值」上面执行这些集合操作的话，你可以先将<strong>值集合转换成 set</strong>，然后再执行集合运算就行了。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/04/07/数据结构和算法-8-字典的运算/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="毕小烦">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="毕小烦的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/07/数据结构和算法-8-字典的运算/" itemprop="url">数据结构和算法-8-字典的运算</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-07T10:29:26+08:00">2018-04-07</time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-07T10:29:26+08:00">2018-04-07</time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PythonCookbook/" itemprop="url" rel="index">
+                    <span itemprop="name">PythonCookbook</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/04/07/数据结构和算法-8-字典的运算/" class="leancloud_visitors" data-flag-title="数据结构和算法-8-字典的运算">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">prices = &#123;</span><br><span class="line">       <span class="string">'ACME'</span>: <span class="number">45.23</span>,</span><br><span class="line">       <span class="string">'AAPL'</span>: <span class="number">612.78</span>,</span><br><span class="line">       <span class="string">'IBM'</span>: <span class="number">205.55</span>,</span><br><span class="line">       <span class="string">'HPQ'</span>: <span class="number">37.20</span>,</span><br><span class="line">       <span class="string">'FB'</span>: <span class="number">10.75</span></span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<p>怎样在<strong>数据字典</strong>中执行一些计算操作（比如求最小值、最大值、排序等等）？</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>STEP1. 把「键」和「值」反转，方便对比值的大小。</p>
+<p>STEP2. 使用 min()  、max()、sorted() 进行操作。</p>
+<p>示例代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_data_dict_operate</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">"""数据字典的操作,求最大、最小值，排序等"""</span></span><br><span class="line">    prices = &#123;</span><br><span class="line">        <span class="string">'ACME'</span>: <span class="number">45.23</span>,</span><br><span class="line">        <span class="string">'AAPL'</span>: <span class="number">612.78</span>,</span><br><span class="line">        <span class="string">'IBM'</span>: <span class="number">205.55</span>,</span><br><span class="line">        <span class="string">'HPQ'</span>: <span class="number">37.20</span>,</span><br><span class="line">        <span class="string">'FB'</span>: <span class="number">10.75</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 字典上执行普通的数学运算,它们仅仅作用于键</span></span><br><span class="line">    <span class="keyword">assert</span> min(prices) == <span class="string">'AAPL'</span></span><br><span class="line">    <span class="keyword">assert</span> max(prices) == <span class="string">'IBM'</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 但这不是我们想要的，我们想要的是值</span></span><br><span class="line">    <span class="comment"># 于是我们尝试使用 values 获得值</span></span><br><span class="line">    <span class="keyword">assert</span> min(prices.values()) == <span class="number">10.75</span></span><br><span class="line">    <span class="keyword">assert</span> max(prices.values()) == <span class="number">612.78</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 可是光有值也不行啊，我们想要的是键和值对应起来,这样才更清晰</span></span><br><span class="line">    <span class="comment"># 于是</span></span><br><span class="line">    <span class="comment"># 在 min() 和 max() 函数中提供 key 函数参数来获取最小值或最大值对应的键的信息</span></span><br><span class="line">    <span class="keyword">assert</span> min(prices, key=<span class="keyword">lambda</span> k: prices[k]) == <span class="string">'FB'</span></span><br><span class="line">    <span class="keyword">assert</span> max(prices, key=<span class="keyword">lambda</span> k: prices[k]) == <span class="string">'AAPL'</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 可键的信息是有了，值的信息还得再查找一次</span></span><br><span class="line">    <span class="comment"># 于是</span></span><br><span class="line">    <span class="keyword">assert</span> prices[min(prices, key=<span class="keyword">lambda</span> k: prices[k])] == <span class="number">10.75</span></span><br><span class="line">    <span class="keyword">assert</span> prices[max(prices, key=<span class="keyword">lambda</span> k: prices[k])] == <span class="number">612.78</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 太麻烦了，有没有简单一点的？</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 有！</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># STEP1. 使用zip()将字典转换为一个以元组为元素的列表，注意值（数据）在前面了</span></span><br><span class="line">    new_prices = zip(prices.values(), prices.keys())</span><br><span class="line">    <span class="comment"># STEP2. 使用min()取出最小值</span></span><br><span class="line">    <span class="keyword">assert</span> min(new_prices) == (<span class="number">10.75</span>, <span class="string">'FB'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># STEP1. 由于zip() 函数创建的是一个只能访问一次的迭代器,因此我们还得再创建一次</span></span><br><span class="line">    new_prices = zip(prices.values(), prices.keys())</span><br><span class="line">    <span class="comment"># STEP2. 使用max()取出最小值</span></span><br><span class="line">    <span class="keyword">assert</span> max(new_prices) == (<span class="number">612.78</span>, <span class="string">'AAPL'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 上面的例子这样写会更好：</span></span><br><span class="line">    <span class="keyword">assert</span> min(zip(prices.values(), prices.keys())) == (<span class="number">10.75</span>, <span class="string">'FB'</span>)</span><br><span class="line">    <span class="keyword">assert</span> max(zip(prices.values(), prices.keys())) == (<span class="number">612.78</span>, <span class="string">'AAPL'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 排序可以使用 zip + sorted</span></span><br><span class="line">    <span class="keyword">assert</span> sorted(zip(prices.values(), prices.keys())) == [(<span class="number">10.75</span>, <span class="string">'FB'</span>), (<span class="number">37.2</span>, <span class="string">'HPQ'</span>), (<span class="number">45.23</span>, <span class="string">'ACME'</span>),</span><br><span class="line">                                                           (<span class="number">205.55</span>, <span class="string">'IBM'</span>), (<span class="number">612.78</span>, <span class="string">'AAPL'</span>)]</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>小贴示：</p>
-<p>这种解压赋值可以用在任何可迭代的对象上，不仅限于列表、元组和字符串，文件对象、迭代器和生成器也是可以的。</p>
+<p>注意：</p>
+<p>当多个「<strong>键</strong>」拥有<strong>相同</strong>的<strong>值</strong>的时候，「键」会决定返回结果。 </p>
+<p>比如，在执行 <code>min()</code> 和 <code>max()</code> 操作的时候，如果恰巧最小或最大值<strong>是相同的</strong>，那么将按照键的大小进行对比：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span> &gt;&gt;&gt; prices = &#123; 'AAA' : 45.23, 'ZZZ': 45.23 &#125;  # 值是相同的</span><br><span class="line"><span class="meta">&gt;</span> &gt;&gt;&gt; min(zip(prices.values(), prices.keys()))  # 值相同时按键进行对比</span><br><span class="line"><span class="meta">&gt;</span> (45.23, 'AAA')</span><br><span class="line"><span class="meta">&gt;</span> &gt;&gt;&gt; max(zip(prices.values(), prices.keys()))</span><br><span class="line"><span class="meta">&gt;</span> (45.23, 'ZZZ')</span><br><span class="line"><span class="meta">&gt;</span> &gt;&gt;&gt;</span><br><span class="line"><span class="meta">&gt;</span></span><br></pre></td></tr></table></figure></blockquote>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/04/07/数据结构和算法-7-字典排序/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="毕小烦">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="毕小烦的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/07/数据结构和算法-7-字典排序/" itemprop="url">数据结构和算法-7-字典排序</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-07T09:41:15+08:00">2018-04-07</time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-07T09:41:15+08:00">2018-04-07</time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PythonCookbook/" itemprop="url" rel="index">
+                    <span itemprop="name">PythonCookbook</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/04/07/数据结构和算法-7-字典排序/" class="leancloud_visitors" data-flag-title="数据结构和算法-7-字典排序">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>假如我们想创建一个字典，并且在迭代或序列化这个字典的时候能够控制元素的顺序。如何实现呢？</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>为了能控制字典中元素的顺序，我们可以使用 <code>collections</code> 模块中的 <code>OrderedDict</code> 类。 </p>
+<p>在迭代操作的时候 <code>OrderedDict</code> 会保持元素被插入时的顺序。</p>
+<p>代码示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> OrderedDict</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_ordereddict</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">"""使用OrderedDict保持字典中元素的顺序"""</span></span><br><span class="line">    od = OrderedDict()</span><br><span class="line">    <span class="comment"># 向字典中插入元素</span></span><br><span class="line">    od[<span class="string">'one'</span>] = <span class="number">1</span></span><br><span class="line">    od[<span class="string">'two'</span>] = <span class="number">2</span></span><br><span class="line">    od[<span class="string">'three'</span>] = <span class="number">3</span></span><br><span class="line">    od[<span class="string">'four'</span>] = <span class="number">4</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 获取字典的值时，顺序没变哦</span></span><br><span class="line">    <span class="keyword">assert</span> list(od.values()) == [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 遍历时,顺序也是没变的哦</span></span><br><span class="line">    <span class="keyword">for</span> key <span class="keyword">in</span> od:</span><br><span class="line">        print(key, od[key])</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 序列化时顺序也是保持不变的</span></span><br><span class="line">    <span class="keyword">assert</span> json.dumps(od) == &#123;<span class="string">"one"</span>: <span class="number">1</span>, <span class="string">"two"</span>: <span class="number">2</span>, <span class="string">"three"</span>: <span class="number">3</span>, <span class="string">"four"</span>: <span class="number">4</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>从上面的例子可以看出，如果我们想精确控制使用 JSON 编码后「字段的顺序」，可以使用 <code>OrderedDict</code> 来构建这样的数据。</p>
+<h2 id="扩展讨论"><a href="#扩展讨论" class="headerlink" title="扩展讨论"></a>扩展讨论</h2><p><code>OrderedDict</code> 内部维护着一个根据键插入顺序排序的<strong>双向链表</strong>。</p>
+<p>每次当一个新的元素插入进来的时候， 它会被放到<strong>链表的尾部</strong>。<strong>对于一个已经存在的键的重复赋值</strong>不会改变键的顺序。</p>
+<p>需要注意的是，</p>
+<p>一个 <code>OrderedDict</code> 的大小是一个普通字典的<strong>两倍</strong>，因为<strong>它内部维护着另外一个链表</strong>。</p>
+<p>所以如果你要构建一个需要大量 <code>OrderedDict</code> 实例的数据结构的时候（比如读取 100,000 行 CSV 数据到一个 <code>OrderedDict</code> 列表中去）， 那么你就得仔细权衡一下是否使用 <code>OrderedDict</code> 带来的好处要大过额外内存消耗的影响。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/04/04/数据结构和算法-6-字典中的键映射多个值/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="毕小烦">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="毕小烦的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/04/数据结构和算法-6-字典中的键映射多个值/" itemprop="url">数据结构和算法-6-字典中的键映射多个值</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-04T09:37:52+08:00">2018-04-04</time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-04T09:37:52+08:00">2018-04-04</time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PythonCookbook/" itemprop="url" rel="index">
+                    <span itemprop="name">PythonCookbook</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/04/04/数据结构和算法-6-字典中的键映射多个值/" class="leancloud_visitors" data-flag-title="数据结构和算法-6-字典中的键映射多个值">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>怎样实现<strong>一个键对应多个值</strong>的字典（也叫 <code>multidict</code>）？</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>我们都知道一个字典就是<strong>一个键对应一个单值</strong>的映射。</p>
+<p>如：<code>{&quot;one&quot;:1}</code></p>
+<p>可如果我们想要让<strong>一个键映射多个值</strong>，那么就需要将这多个值放到另外的<strong>容器</strong>（列表或集合）中。</p>
+<p>如：<code>{&quot;one&quot;:[1,2,3,4]}</code></p>
+<p>选择使用列表还是集合取决于你的实际需求。</p>
+<ul>
+<li>如果你想<strong>保持元素的插入顺序</strong>就应该使用<strong>列表</strong>。</li>
+<li>如果想<strong>去掉重复元素</strong>就使用<strong>集合</strong>（并且不关心元素的顺序）。</li>
+</ul>
+<h3 id="使用-defaultdict"><a href="#使用-defaultdict" class="headerlink" title="使用 defaultdict"></a>使用 defaultdict</h3><p>我们可以很方便的使用 <code>collections</code> 模块中的 <code>defaultdict</code> 来构造这样的字典。</p>
+<p> <code>defaultdict</code> 的一个特征是它会<strong>自动初始化每个 <code>key</code> 刚开始对应的值</strong>，所以我们只需要<strong>关注添加元素操作</strong>就行了。</p>
+<p>比如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> defaultdict</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_multidict_use_defaultdict</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">"""使用defaultdict创建多值字典"""</span></span><br><span class="line">    <span class="comment"># 用列表来存储多个值，会保持元素的插入顺序，且不会去掉重复的元素</span></span><br><span class="line">    d = defaultdict(list)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 向「键」中加入多个值</span></span><br><span class="line">    d[<span class="string">'name'</span>].append(<span class="string">"张三"</span>)</span><br><span class="line">    d[<span class="string">'name'</span>].append(<span class="string">"李四"</span>)</span><br><span class="line">    d[<span class="string">'name'</span>].append(<span class="string">"王二"</span>)</span><br><span class="line">    d[<span class="string">'name'</span>].append(<span class="string">"王二"</span>)</span><br><span class="line">    d[<span class="string">'age'</span>].append(<span class="number">20</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> d.get(<span class="string">'name'</span>) == [<span class="string">'张三'</span>, <span class="string">'李四'</span>, <span class="string">'王二'</span>, <span class="string">'王二'</span>]</span><br><span class="line">    <span class="keyword">assert</span> d.get(<span class="string">'age'</span>) == [<span class="number">20</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 用集合来存储多个值，会去掉重复的元素，且不关心元素顺序</span></span><br><span class="line">    d2 = defaultdict(set)</span><br><span class="line"></span><br><span class="line">    d2[<span class="string">'name'</span>].add(<span class="string">"张三"</span>)</span><br><span class="line">    d2[<span class="string">'name'</span>].add(<span class="string">"李四"</span>)</span><br><span class="line">    d2[<span class="string">'name'</span>].add(<span class="string">"王二"</span>)</span><br><span class="line">    d2[<span class="string">'name'</span>].add(<span class="string">"王二"</span>)</span><br><span class="line">    d2[<span class="string">'name'</span>].add(<span class="string">"王二"</span>)</span><br><span class="line">    d2[<span class="string">'name'</span>].add(<span class="string">"王二"</span>)</span><br><span class="line">    d2[<span class="string">'age'</span>].add(<span class="number">20</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> d2.get(<span class="string">'name'</span>) == &#123;<span class="string">'李四'</span>, <span class="string">'张三'</span>, <span class="string">'王二'</span>&#125;</span><br><span class="line">    <span class="keyword">assert</span> d2.get(<span class="string">'age'</span>) == &#123;<span class="number">20</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>需要注意的是， <code>defaultdict</code> 会自动为将要访问的键（<strong>就算目前字典中并不存在这样的键</strong>）创建映射实体。</p>
+<p>如果我们不需要这样的特性，可以在一个<strong>普通的字典上</strong>使用 <code>setdefault()</code> 方法来代替。 </p>
+<h3 id="使用-setdefault"><a href="#使用-setdefault" class="headerlink" title="使用 setdefault"></a>使用 setdefault</h3><p>使用setdefault创建多值字典，比如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_multidict_use_setdefault</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">"""使用setdefault创建多值字典"""</span></span><br><span class="line"></span><br><span class="line">    d = &#123;&#125;  <span class="comment"># 一个普通的字典</span></span><br><span class="line">    d.setdefault(<span class="string">'a'</span>, []).append(<span class="number">1</span>) <span class="comment"># 每次都要创建一个新的初始值实例</span></span><br><span class="line">    d.setdefault(<span class="string">'a'</span>, []).append(<span class="number">2</span>)</span><br><span class="line">    d.setdefault(<span class="string">'b'</span>, []).append(<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> d.get(<span class="string">'a'</span>) == [<span class="number">1</span>, <span class="number">2</span>]</span><br><span class="line">    <span class="keyword">assert</span> d.get(<span class="string">'b'</span>) == [<span class="number">4</span>]</span><br></pre></td></tr></table></figure>
+<p>但是很多程序员觉得 <code>setdefault()</code> 用起来有点别扭。因为每次调用都得创建一个新的初始值的实例（例子程序中的空列表 <code>[]</code> ）。</p>
+<h3 id="自已动手"><a href="#自已动手" class="headerlink" title="自已动手"></a>自已动手</h3><p>一般来讲，创建一个多值映射字典是很简单的。</p>
+<p>但是，如果你选择自己实现的话，那么对于值的初始化可能会有点麻烦。</p>
+<p>你可能会像下面这样来实现：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">d = &#123;&#125;</span><br><span class="line"><span class="keyword">for</span> key, value <span class="keyword">in</span> pairs:</span><br><span class="line">    <span class="keyword">if</span> key <span class="keyword">not</span> <span class="keyword">in</span> d:</span><br><span class="line">        d[key] = []</span><br><span class="line">    d[key].append(value)</span><br></pre></td></tr></table></figure>
+<p>如果使用 <code>defaultdict</code> 的话代码就更加简洁了：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d = defaultdict(list)</span><br><span class="line"><span class="keyword">for</span> key, value <span class="keyword">in</span> pairs:</span><br><span class="line">    d[key].append(value)</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/04/03/数据结构和算法-5-实现一个优先级队列/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="毕小烦">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="毕小烦的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/03/数据结构和算法-5-实现一个优先级队列/" itemprop="url">「数据结构和算法」5-实现一个优先级队列</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-03T12:03:06+08:00">2018-04-03</time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-03T12:03:06+08:00">2018-04-03</time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PythonCookbook/" itemprop="url" rel="index">
+                    <span itemprop="name">PythonCookbook</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/04/03/数据结构和算法-5-实现一个优先级队列/" class="leancloud_visitors" data-flag-title="「数据结构和算法」5-实现一个优先级队列">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>怎样实现一个按优先级排序的队列？ 并且在这个队列上面每次 pop 操作总是<strong>返回优先级最高</strong>的那个元素？</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>可使用 <code>heapq</code> 模块实现了一个简单的优先级队列。</p>
+<p>代码演示：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> heapq</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PriorityQueue</span>:</span></span><br><span class="line">    <span class="string">"""利用 heapq 模块实现了一个简单的优先级队列"""</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self._queue = []</span><br><span class="line">        self._index = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">push</span><span class="params">(self, item, priority)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        添加队列</span></span><br><span class="line"><span class="string">        :param item: 元素</span></span><br><span class="line"><span class="string">        :param priority: 优先级</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        <span class="comment"># 优先级为负数的目的是使得元素按照优先级从高到低排序</span></span><br><span class="line">        <span class="comment"># 这个跟普通的按优先级从低到高排序的堆排序恰巧相反</span></span><br><span class="line">        heapq.heappush(self._queue, (-priority, self._index, item))</span><br><span class="line">        <span class="comment"># 通过不断增加 index 保证元素按照它们插入的顺序挺排序</span></span><br><span class="line">        self._index += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">pop</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">"""弹出队列"""</span></span><br><span class="line">        <span class="keyword">return</span> heapq.heappop(self._queue)[<span class="number">-1</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Item</span>:</span></span><br><span class="line">    <span class="string">"""使用方式"""</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__repr__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">'Item(&#123;!r&#125;)'</span>.format(self.name)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_priority_queue</span><span class="params">()</span>:</span></span><br><span class="line">    q = PriorityQueue()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 插入元素</span></span><br><span class="line">    q.push(Item(<span class="string">'foo'</span>), <span class="number">1</span>)</span><br><span class="line">    q.push(Item(<span class="string">'bar'</span>), <span class="number">5</span>)</span><br><span class="line">    q.push(Item(<span class="string">'spam'</span>), <span class="number">4</span>)</span><br><span class="line">    q.push(Item(<span class="string">'grok'</span>), <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 按优先级 pop  元素</span></span><br><span class="line">    print(q.pop())  <span class="comment"># Item('bar')</span></span><br><span class="line">    print(q.pop())  <span class="comment"># Item('spam')</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 如果优先级相同，则按插入顺序返回</span></span><br><span class="line">    print(q.pop())  <span class="comment"># Item('foo')</span></span><br><span class="line">    print(q.pop())  <span class="comment"># Item('grok')</span></span><br></pre></td></tr></table></figure>
+<p>函数 <code>heapq.heappush()</code> 和 <code>heapq.heappop()</code> 分别在队列 <code>_queue</code> 上插入和删除第一个元素， 并且队列 <code>_queue</code> 保证<strong>第一个元素拥有最高优先级</strong>。</p>
+<p> <code>heappop()</code> 函数总是返回「<strong>最小的</strong>」的元素，这就是保证队列 pop 操作返回正确元素的关键。 </p>
+<p>另外，由于 push 和 pop 操作时间复杂度为 O(log N)，其中 N 是堆的大小，因此就算是 N 很大的时候它们运行速度也依旧很快。</p>
+<p>在上面代码中，队列包含了一个 <code>(-priority, index, item)</code> 的元组。 </p>
+<p><strong>优先级为负数</strong>（<code>-priority</code>）的目的是使得元素按照优先级从高到低排序。 这个跟普通的按优先级从低到高排序的堆排序恰巧相反。</p>
+<p><code>index</code> 变量的作用是保证同等优先级元素的正确排序。 通过保存一个不断增加的 <code>index</code> 下标变量，可以确保元素按照它们插入的顺序排序。 而且， <code>index</code> 变量也在相同优先级元素比较的时候起到重要作用。</p>
+<blockquote>
+<p>Tips:</p>
+<p>如果我们想在多个线程中使用同一个队列，就需要增加适当的锁和信号量机制。 </p>
 </blockquote>
 
           
@@ -467,7 +1544,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/01/21/显示命令的帮助手册-man/">
+    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/03/13/数据结构和算法-4-查找最大或最小的 N 个元素/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="毕小烦">
@@ -486,7 +1563,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/01/21/显示命令的帮助手册-man/" itemprop="url">显示命令的帮助手册-man</a></h1>
+                <a class="post-title-link" href="/2018/03/13/数据结构和算法-4-查找最大或最小的 N 个元素/" itemprop="url">数据结构和算法-4-查找最大或最小的N个元素</a></h1>
         
 
         <div class="post-meta">
@@ -498,7 +1575,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-21T14:22:57+08:00">2018-01-21</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-13T21:02:30+08:00">2018-03-13</time>
             
 
             
@@ -512,7 +1589,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-21T14:22:57+08:00">2018-01-21</time>
+              <time title="更新于" itemprop="dateModified" datetime="2018-03-13T21:02:30+08:00">2018-03-13</time>
             
           </span>
 
@@ -529,8 +1606,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/每天一个Linux命令/" itemprop="url" rel="index">
-                    <span itemprop="name">每天一个Linux命令</span>
+                  <a href="/categories/PythonCookbook/" itemprop="url" rel="index">
+                    <span itemprop="name">PythonCookbook</span>
                   </a>
                 </span>
 
@@ -546,7 +1623,7 @@
 
           
           
-             <span id="/2018/01/21/显示命令的帮助手册-man/" class="leancloud_visitors" data-flag-title="显示命令的帮助手册-man">
+             <span id="/2018/03/13/数据结构和算法-4-查找最大或最小的 N 个元素/" class="leancloud_visitors" data-flag-title="数据结构和算法-4-查找最大或最小的N个元素">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -579,15 +1656,413 @@
       
         
           
-            <p>man 是 manual（手册）的缩写，用来快速查询某个命令的 man-pages（帮助手册页面），并格式化显示。</p>
-<h3 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法:"></a>常用方法:</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 显示某个命令的帮助手册</span><br><span class="line"><span class="meta">$</span> man 命令名</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 显示某个命令帮助手册的位置而不是内容：</span><br><span class="line"><span class="meta">$</span> man -w 命令名</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 显示帮助手册的搜索路径</span><br><span class="line"><span class="meta">$</span> man --path</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 查询所有包含某个关键字的帮助手册</span><br><span class="line"><span class="meta">$</span> man -k 关键字</span><br></pre></td></tr></table></figure>
-<h3 id="实例演示"><a href="#实例演示" class="headerlink" title="实例演示:"></a>实例演示:</h3><h4 id="实例1：显示-sort-命令的帮助手册"><a href="#实例1：显示-sort-命令的帮助手册" class="headerlink" title="实例1：显示 sort 命令的帮助手册"></a>实例1：显示 sort 命令的帮助手册</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~$ man sort</span><br></pre></td></tr></table></figure>
-<p>命令执行后会进入帮助手册页面，如图所示。帮助手册页面包括了命令的介绍和用法，以及命令选项的说明。</p>
-<p><img src="/images/001-linux-man.png" alt=""></p>
-<p>帮助手册页面其实是进入了less查看模式，只要使用less的快捷键操作来查看页面就可以了，非常方便。</p>
-<h4 id="实例2：显示man命令查找帮助手册的路径"><a href="#实例2：显示man命令查找帮助手册的路径" class="headerlink" title="实例2：显示man命令查找帮助手册的路径"></a>实例2：显示man命令查找帮助手册的路径</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">~$ man --path</span><br><span class="line">/opt/subversion/man:/Library/Frameworks/Python.framework/Versions/2.7/share/man:/usr/local/share/man:/usr/share/man:/opt/X11/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 或 使用man -w,后面不带参数哦。</span><br><span class="line">~$ man -w</span><br><span class="line">/opt/subversion/man:/Library/Frameworks/Python.framework/Versions/2.7/share/man:/usr/local/share/man:/usr/share/man:/opt/X11/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man</span><br></pre></td></tr></table></figure>
-<h4 id="实例3：显示-ssh-命令的帮助手册地址"><a href="#实例3：显示-ssh-命令的帮助手册地址" class="headerlink" title="实例3：显示 ssh 命令的帮助手册地址"></a>实例3：显示 ssh 命令的帮助手册地址</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">~$ man -w ssh</span><br><span class="line">/usr/share/man/man1/ssh.1</span><br></pre></td></tr></table></figure>
-<h4 id="实例4：查询所有包含-awk-的帮助手册"><a href="#实例4：查询所有包含-awk-的帮助手册" class="headerlink" title="实例4：查询所有包含 awk 的帮助手册"></a>实例4：查询所有包含 awk 的帮助手册</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">~$ man -k awk</span><br><span class="line">English(3pm)             - use nice English (or awk) names for ugly punctuation variables</span><br><span class="line">a2p(1)                   - Awk to Perl translator</span><br><span class="line">awk(1)                   - pattern-directed scanning and processing language</span><br></pre></td></tr></table></figure>
+            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>怎样从一个集合中获得最大或者最小的 N 个元素列表？</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>heapq 模块有两个函数：<code>nlargest()</code> 和 <code>nsmallest()</code> 可以完美解决这个问题。</p>
+<p>示例代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_nlargest_nsmallest</span><span class="params">()</span>:</span></span><br><span class="line">    li = [<span class="number">3</span>, <span class="number">8</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">9</span>, <span class="number">0</span>, <span class="number">2</span>, <span class="number">6</span>]</span><br><span class="line">    heapq.heapify(li)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 获得n个最大的元素</span></span><br><span class="line">    <span class="keyword">assert</span> heapq.nlargest(<span class="number">3</span>, li) == [<span class="number">9</span>, <span class="number">8</span>, <span class="number">6</span>]</span><br><span class="line">    <span class="comment"># 获得n个最小的元素</span></span><br><span class="line">    <span class="keyword">assert</span> heapq.nsmallest(<span class="number">3</span>, li) == [<span class="number">0</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
+<p>两个函数都能接受一个关键字参数，用于更复杂的数据结构中：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_heapq_nsmallest_nlargest</span><span class="params">()</span>:</span></span><br><span class="line">    portfolio = [</span><br><span class="line">        &#123;<span class="string">'name'</span>: <span class="string">'IBM'</span>, <span class="string">'shares'</span>: <span class="number">100</span>, <span class="string">'price'</span>: <span class="number">91.1</span>&#125;,</span><br><span class="line">        &#123;<span class="string">'name'</span>: <span class="string">'AAPL'</span>, <span class="string">'shares'</span>: <span class="number">50</span>, <span class="string">'price'</span>: <span class="number">543.22</span>&#125;,</span><br><span class="line">        &#123;<span class="string">'name'</span>: <span class="string">'FB'</span>, <span class="string">'shares'</span>: <span class="number">200</span>, <span class="string">'price'</span>: <span class="number">21.09</span>&#125;,</span><br><span class="line">        &#123;<span class="string">'name'</span>: <span class="string">'HPQ'</span>, <span class="string">'shares'</span>: <span class="number">35</span>, <span class="string">'price'</span>: <span class="number">31.75</span>&#125;,</span><br><span class="line">        &#123;<span class="string">'name'</span>: <span class="string">'YHOO'</span>, <span class="string">'shares'</span>: <span class="number">45</span>, <span class="string">'price'</span>: <span class="number">16.35</span>&#125;,</span><br><span class="line">        &#123;<span class="string">'name'</span>: <span class="string">'ACME'</span>, <span class="string">'shares'</span>: <span class="number">75</span>, <span class="string">'price'</span>: <span class="number">115.65</span>&#125;</span><br><span class="line">    ]</span><br><span class="line">    <span class="comment"># 以 price 的值进行比较，取最小的3个</span></span><br><span class="line">    cheap = heapq.nsmallest(<span class="number">3</span>, portfolio, key=<span class="keyword">lambda</span> s: s[<span class="string">'price'</span>])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> cheap == [</span><br><span class="line">        &#123;<span class="string">'name'</span>: <span class="string">'YHOO'</span>, <span class="string">'shares'</span>: <span class="number">45</span>, <span class="string">'price'</span>: <span class="number">16.35</span>&#125;,</span><br><span class="line">        &#123;<span class="string">'name'</span>: <span class="string">'FB'</span>, <span class="string">'shares'</span>: <span class="number">200</span>, <span class="string">'price'</span>: <span class="number">21.09</span>&#125;,</span><br><span class="line">        &#123;<span class="string">'name'</span>: <span class="string">'HPQ'</span>, <span class="string">'shares'</span>: <span class="number">35</span>, <span class="string">'price'</span>: <span class="number">31.75</span>&#125;</span><br><span class="line">    ]</span><br><span class="line">    <span class="comment"># 以 price 的值进行比较，取最大的3个</span></span><br><span class="line">    expensive = heapq.nlargest(<span class="number">3</span>, portfolio, key=<span class="keyword">lambda</span> s: s[<span class="string">'price'</span>])</span><br><span class="line">    <span class="keyword">assert</span> expensive == [</span><br><span class="line">        &#123;<span class="string">'name'</span>: <span class="string">'AAPL'</span>, <span class="string">'shares'</span>: <span class="number">50</span>, <span class="string">'price'</span>: <span class="number">543.22</span>&#125;,</span><br><span class="line">        &#123;<span class="string">'name'</span>: <span class="string">'ACME'</span>, <span class="string">'shares'</span>: <span class="number">75</span>, <span class="string">'price'</span>: <span class="number">115.65</span>&#125;,</span><br><span class="line">        &#123;<span class="string">'name'</span>: <span class="string">'IBM'</span>, <span class="string">'shares'</span>: <span class="number">100</span>, <span class="string">'price'</span>: <span class="number">91.1</span>&#125;</span><br><span class="line">    ]</span><br></pre></td></tr></table></figure>
+<h2 id="扩展讨论"><a href="#扩展讨论" class="headerlink" title="扩展讨论"></a>扩展讨论</h2><p>如果你想在一个集合中查找最小或最大的 N 个元素，并且 N 小于集合元素数量，那么这些函数提供了很好的性能。 </p>
+<p>因为在底层实现里面，首先会先将集合数据进行堆排序后放入一个列表中：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>nums = [<span class="number">1</span>, <span class="number">8</span>, <span class="number">2</span>, <span class="number">23</span>, <span class="number">7</span>, <span class="number">-4</span>, <span class="number">18</span>, <span class="number">23</span>, <span class="number">42</span>, <span class="number">37</span>, <span class="number">2</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> heapq</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>heap = list(nums)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>heapq.heapify(heap)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>heap</span><br><span class="line">[<span class="number">-4</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">23</span>, <span class="number">7</span>, <span class="number">2</span>, <span class="number">18</span>, <span class="number">23</span>, <span class="number">42</span>, <span class="number">37</span>, <span class="number">8</span>]  <span class="comment">#  heap[0] 永远是最小的元素</span></span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+<p>堆数据结构最重要的特征是 <code>heap[0]</code> 永远是最小的元素。</p>
+<p>并且剩余的元素可以很容易的通过调用 <code>heapq.heappop()</code> 方法得到， 该方法会<strong>先将第一个元素弹出来</strong>，然后用<strong>下一个最小的元素来取代被弹出元素</strong>（这种操作时间复杂度仅仅是 O(log N)，N 是堆大小）。 </p>
+<p>比如，如果想要查找最小的 3 个元素，你可以这样做：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>heapq.heappop(heap)</span><br><span class="line"><span class="number">-4</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>heapq.heappop(heap)</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>heapq.heappop(heap)</span><br><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure>
+<p>当要查找的元素个数<strong>相对比较小</strong>的时候，函数 <code>nlargest()</code> 和 <code>nsmallest()</code> 是很合适的。 </p>
+<p>如果你仅仅想查找唯一的<strong>最小或最大</strong>（N=1）的元素的话，那么使用 <code>min()</code> 和 <code>max()</code> 函数会更快些。 </p>
+<p>类似的，</p>
+<p>如果 N 的大小和集合大小接近的时候，通常先排序这个集合然后再使用切片操作会更快点 （ <code>sorted(items)[:N]</code> 或者是 <code>sorted(items)[-N:]</code> ）。 </p>
+<p>需要在正确场合使用函数 <code>nlargest()</code> 和 <code>nsmallest()</code> 才能发挥它们的优势 （如果 N 快接近集合大小了，那么使用排序操作会更好些）。</p>
+<p>尽管你没有必要一定使用这里的方法，但是堆数据结构的实现是一个很有趣并且值得你深入学习的东西。 基本上只要是数据结构和算法书籍里面都会有提及到。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/03/08/数据结构和算法-3-保留最后加入的固定个数的元素/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="毕小烦">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="毕小烦的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/08/数据结构和算法-3-保留最后加入的固定个数的元素/" itemprop="url">数据结构和算法-3.保留最后加入的固定个数的元素</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-08T21:02:30+08:00">2018-03-08</time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-03-08T21:02:30+08:00">2018-03-08</time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PythonCookbook/" itemprop="url" rel="index">
+                    <span itemprop="name">PythonCookbook</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/03/08/数据结构和算法-3-保留最后加入的固定个数的元素/" class="leancloud_visitors" data-flag-title="数据结构和算法-3.保留最后加入的固定个数的元素">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>在迭代操作或者其他操作的时候，怎样只保留最后加入的固定个数的元素？</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>使用 <code>collections.deque(maxlen=N)</code> 建立固定大小的队列，当新的元素加入并且这个队列已满的时候， 最老的元素会自动被移除掉。</p>
+<p>如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_deque_maxlen</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">"""测试如何使用固定大小的队列"""</span></span><br><span class="line"></span><br><span class="line">    q = deque(maxlen=<span class="number">3</span>)  <span class="comment"># 新建一个固定大小的队列</span></span><br><span class="line">    q.append(<span class="number">1</span>)  <span class="comment"># 添加元素</span></span><br><span class="line">    q.append(<span class="number">2</span>)</span><br><span class="line">    q.append(<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> list(q) == [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]  <span class="comment"># 正好添加3个</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 再添加2个</span></span><br><span class="line">    q.append(<span class="number">4</span>)</span><br><span class="line">    q.append(<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 会把老的元素移除</span></span><br><span class="line">    <span class="keyword">assert</span> list(q) == [<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>举个例子：</p>
+<p>假设现在有一个文件，我们遍历文件的每一行，但是保留最后读取的 5 行内容，应该如何做呢？</p>
+</blockquote>
+<p>示例代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> deque</span><br><span class="line"></span><br><span class="line">relative_path = <span class="string">"somefile.txt"</span></span><br><span class="line"></span><br><span class="line">filepath = os.path.join(os.path.dirname(os.path.realpath(__file__)), os.sep.join(relative_path.split(<span class="string">'/'</span>)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">search</span><span class="params">(lines, pattern, history=<span class="number">5</span>)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    搜索关键字内容，返回最后读取的5行内容</span></span><br><span class="line"><span class="string">    :param lines: 一行内容</span></span><br><span class="line"><span class="string">    :param pattern: 匹配的关键字</span></span><br><span class="line"><span class="string">    :param history: 用于生成固定队列的大小</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    previous_lines = deque(maxlen=history)  <span class="comment"># 使用 deque 新建一个固定大小的队列</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">        <span class="keyword">if</span> pattern <span class="keyword">in</span> line:</span><br><span class="line">            <span class="keyword">yield</span> line, previous_lines  <span class="comment"># 返回一个迭代器</span></span><br><span class="line">        previous_lines.append(line)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_last_n</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">with</span> open(filepath) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="comment"># 遍历迭代器 search</span></span><br><span class="line">        <span class="keyword">for</span> line, prevlines <span class="keyword">in</span> search(f, <span class="string">'Python'</span>, <span class="number">5</span>):</span><br><span class="line"></span><br><span class="line">            <span class="comment"># prevlines 首次返回的是空，因此跳过去</span></span><br><span class="line">            <span class="keyword">if</span> prevlines:</span><br><span class="line">                <span class="keyword">assert</span> len(prevlines) == <span class="number">5</span>  <span class="comment"># 其余情况一定是固定的5个元素</span></span><br><span class="line"></span><br><span class="line">            <span class="comment"># 遍历 previous_lines</span></span><br><span class="line">            <span class="keyword">for</span> pline <span class="keyword">in</span> prevlines:</span><br><span class="line">                print(pline, end=<span class="string">''</span>)  <span class="comment"># 打印出来</span></span><br><span class="line">            print(<span class="string">'-'</span> * <span class="number">20</span>)</span><br></pre></td></tr></table></figure>
+<p>我们在写查询元素的代码时，通常会使用包含 <code>yield</code> 表达式的<strong>生成器函数</strong>，这样可以将搜索<strong>过程</strong>代码和使用搜索<strong>结果</strong>代码<strong>解耦</strong>。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.bixiaofan.com/2018/03/07/数据结构和算法-2-解压可迭代对象赋值给多个变量/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="毕小烦">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="毕小烦的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/07/数据结构和算法-2-解压可迭代对象赋值给多个变量/" itemprop="url">数据结构和算法-2.解压可迭代对象赋值给多个变量</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-07T21:02:30+08:00">2018-03-07</time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-03-07T21:02:30+08:00">2018-03-07</time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PythonCookbook/" itemprop="url" rel="index">
+                    <span itemprop="name">PythonCookbook</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/03/07/数据结构和算法-2-解压可迭代对象赋值给多个变量/" class="leancloud_visitors" data-flag-title="数据结构和算法-2.解压可迭代对象赋值给多个变量">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>如果我们遇到一个不确定个数的可迭代对象，如何解压它们呢？</p>
+<p>如果直接用变量解压，变量个数超过元素个数时，会抛出一个 <code>ValueError</code> 。</p>
+<p>如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 变量个数超过元素</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a,b,c,d = [<span class="number">1</span>,<span class="number">2</span>]</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">ValueError: <span class="keyword">not</span> enough values to unpack (expected <span class="number">4</span>, got <span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+<p>那么怎样才能从这个可迭代对象中解压出想要的元素来呢？</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>Python 的<strong>星号表达式</strong>可以用来解决这个问题。</p>
+<p><strong>示例1：星号表达式用在中间部分</strong></p>
+<blockquote>
+<p>你在学习一门课程，在学期末的时候， 你想统计下家庭作业的平均成绩，但是需要<strong>排除掉第一个和最后一个分数</strong>，如何实现呢？</p>
+<p>如果只有四个分数，你可能就直接去简单的手动赋值， 但如果有 24 个呢？</p>
+</blockquote>
+<p>这时候<strong>星号表达式</strong>就派上用场了。</p>
+<p><strong>代码演示：</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_use_asterisk_expr</span><span class="params">()</span>:</span></span><br><span class="line">    grades = (<span class="number">30</span>, <span class="number">40</span>, <span class="number">60</span>, <span class="number">80</span>, <span class="number">90</span>, <span class="number">98</span>, <span class="number">100</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 使用*号表达式</span></span><br><span class="line">    first, *middle, last = grades</span><br><span class="line">    <span class="keyword">assert</span> middle == [<span class="number">40</span>, <span class="number">60</span>, <span class="number">80</span>, <span class="number">90</span>, <span class="number">98</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> <span class="number">73.6</span> == sum(middle) / len(middle)</span><br></pre></td></tr></table></figure>
+<p><strong>示例2：星号表达式用在后面的部分</strong></p>
+<blockquote>
+<p>假设你现在有一些用户的记录列表，每条记录包含一个名字、邮件，接着就是<strong>不确定数量</strong>的电话号码。</p>
+<p>如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; record = (<span class="string">'Dave'</span>, <span class="string">'dave@example.com'</span>, <span class="string">'773-555-1212'</span>, <span class="string">'847-555-1212'</span>)</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<p>如何分解这些记录呢？</p>
+</blockquote>
+<p><strong>代码演示：</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_use_asterisk_expr_behind</span><span class="params">()</span>:</span></span><br><span class="line">    record = (<span class="string">'张三'</span>, <span class="string">'dave@example.com'</span>, <span class="string">'773-555-1212'</span>, <span class="string">'847-555-1212'</span>)</span><br><span class="line">    <span class="comment"># 使用星号表达式</span></span><br><span class="line">    name, email, *phone_numbers = record</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> name == <span class="string">"张三"</span></span><br><span class="line">    <span class="keyword">assert</span> email == <span class="string">'dave@example.com'</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 解压出的 phone_numbers 变量永远都是列表类型，不管解压的电话号码数量是多少（包括 0 个）</span></span><br><span class="line">    <span class="keyword">assert</span> phone_numbers == [<span class="string">'773-555-1212'</span>, <span class="string">'847-555-1212'</span>]</span><br></pre></td></tr></table></figure>
+<p>注意：</p>
+<p>上面解压出的 <code>phone_numbers</code> 变量<strong>永远都是列表类型</strong>，不管解压的电话号码数量是多少（包括 0 个）。 </p>
+<p>所以，任何使用到 <code>phone_numbers</code> 变量的代码就<strong>不需要做多余的类型</strong>检查去确认它是否是<strong>列表类型</strong>了。</p>
+<p><strong>示例3：星号表达式用在前面的部分</strong></p>
+<blockquote>
+<p>假设你有一个公司前 8 个月销售数据的序列， 但是你想看下最近一个月数据和前面 7 个月的平均值的对比。</p>
+<p>如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; datas = [10, 8, 7, 1, 9, 5, 10, 3]</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<p>如何获得最近1个和前面7个数据呢？</p>
+</blockquote>
+<p>代码演示：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_use_asterisk_expr_front</span><span class="params">()</span>:</span></span><br><span class="line">    datas = [<span class="number">10</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">1</span>, <span class="number">9</span>, <span class="number">5</span>, <span class="number">10</span>, <span class="number">3</span>]</span><br><span class="line"></span><br><span class="line">    *trailing, last = datas</span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> trailing == [<span class="number">10</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">1</span>, <span class="number">9</span>, <span class="number">5</span>, <span class="number">10</span>]</span><br><span class="line">    <span class="keyword">assert</span> last == <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<h2 id="更多讨论"><a href="#更多讨论" class="headerlink" title="更多讨论"></a>更多讨论</h2><blockquote>
+<p>扩展的迭代解压语法是<strong>专门为解压不确定个数或任意个数元素的可迭代对象</strong>而设计的。 </p>
+</blockquote>
+<p><strong>在什么时候使用星号表达式呢？</strong></p>
+<p>当可迭代对象的元素结构<strong>有确定的规则</strong>的（比如第 1 个元素后面都是电话号码），星号表达式让我们可以很容易的利用这些规则来解压出元素来， 而不是通过一些比较复杂的手段去获取这些关联的元素值。</p>
+<h3 id="遍历可变的长元组序列"><a href="#遍历可变的长元组序列" class="headerlink" title="遍历可变的长元组序列"></a><strong>遍历可变的长元组</strong>序列</h3><p>值得注意的是，星号表达式在迭代元素为<strong>可变的长元组</strong>序列时是很有用的。 </p>
+<p>示例代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_var_long_tuple</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="comment"># 一个可变长元组的序列</span></span><br><span class="line">    records = [</span><br><span class="line">        (<span class="string">'foo'</span>, <span class="number">1</span>, <span class="number">2</span>),</span><br><span class="line">        (<span class="string">'bar'</span>, <span class="string">'hello'</span>),</span><br><span class="line">        (<span class="string">'foo'</span>, <span class="number">3</span>, <span class="number">4</span>),</span><br><span class="line">    ]</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">do_foo</span><span class="params">(x, y)</span>:</span></span><br><span class="line">        print(<span class="string">'foo:'</span>, x, y)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">do_bar</span><span class="params">(s)</span>:</span></span><br><span class="line">        print(<span class="string">'bar:'</span>, s)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 使用星号表达式遍历一个可变长元组的序列</span></span><br><span class="line">    <span class="keyword">for</span> tag, *args <span class="keyword">in</span> records:</span><br><span class="line">        <span class="keyword">if</span> tag == <span class="string">'foo'</span>:</span><br><span class="line">            do_foo(*args)</span><br><span class="line">        <span class="keyword">elif</span> tag == <span class="string">'bar'</span>:</span><br><span class="line">            do_bar(*args)</span><br></pre></td></tr></table></figure>
+<h3 id="字符串的分割"><a href="#字符串的分割" class="headerlink" title="字符串的分割"></a>字符串的分割</h3><p>星号解压语法在字符串操作的时候也会很有用，比如字符串的分割。</p>
+<p>示例代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_separate_str</span><span class="params">()</span>:</span></span><br><span class="line">    line = <span class="string">'nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false'</span></span><br><span class="line">    uname, *fields, homedir, sh = line.split(<span class="string">':'</span>)</span><br><span class="line">    <span class="keyword">assert</span> uname == <span class="string">"nobody"</span></span><br><span class="line">    <span class="keyword">assert</span> homedir == <span class="string">"/var/empty"</span></span><br><span class="line">    <span class="keyword">assert</span> sh == <span class="string">"/usr/bin/false"</span></span><br></pre></td></tr></table></figure>
+<h3 id="解压一些元素后丢弃"><a href="#解压一些元素后丢弃" class="headerlink" title="解压一些元素后丢弃"></a>解压一些元素后丢弃</h3><p>有时候，我们想解压一些元素后丢弃它们，虽然不能简单就使用 <code>*</code> ， 但是可以使用一个普通的废弃名称，比如 <code>_</code> 或者 <code>ign</code> （ignore）。</p>
+<p>示例代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_ignore</span><span class="params">()</span>:</span></span><br><span class="line">    record = (<span class="string">'ACME'</span>, <span class="number">50</span>, <span class="number">123.45</span>, (<span class="number">12</span>, <span class="number">18</span>, <span class="number">2012</span>))</span><br><span class="line">    name, *_, (*_, year) = record</span><br><span class="line">    <span class="keyword">assert</span> name == <span class="string">'ACME'</span></span><br><span class="line">    <span class="keyword">assert</span> year == <span class="number">2012</span></span><br></pre></td></tr></table></figure>
+<h3 id="分隔列表"><a href="#分隔列表" class="headerlink" title="分隔列表"></a>分隔列表</h3><p>在很多函数式语言中，星号解压语法跟列表处理有许多相似之处。</p>
+<p>比如，如果你有一个列表， 你可以很容易的将它分割成几部分。</p>
+<p>示例代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_use_asterisk_expr</span><span class="params">()</span>:</span></span><br><span class="line">    grades = (<span class="number">30</span>, <span class="number">40</span>, <span class="number">60</span>, <span class="number">80</span>, <span class="number">90</span>, <span class="number">98</span>, <span class="number">100</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 在中间使用星号表达式</span></span><br><span class="line">    first, *middle, last = grades</span><br><span class="line">    <span class="keyword">assert</span> first == <span class="number">30</span></span><br><span class="line">    <span class="keyword">assert</span> middle == [<span class="number">40</span>, <span class="number">60</span>, <span class="number">80</span>, <span class="number">90</span>, <span class="number">98</span>]</span><br><span class="line">    <span class="keyword">assert</span> last == <span class="number">100</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 在后边使用星号表达式</span></span><br><span class="line">    first, *behind= grades</span><br><span class="line">    <span class="keyword">assert</span> first == <span class="number">30</span></span><br><span class="line">    <span class="keyword">assert</span> behind == [<span class="number">40</span>, <span class="number">60</span>, <span class="number">80</span>, <span class="number">90</span>, <span class="number">98</span>, <span class="number">100</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 在前边使用星号表达式</span></span><br><span class="line">    *front, last = grades</span><br><span class="line">    <span class="keyword">assert</span> front == [<span class="number">30</span>, <span class="number">40</span>, <span class="number">60</span>, <span class="number">80</span>, <span class="number">90</span>, <span class="number">98</span>]</span><br><span class="line">    <span class="keyword">assert</span> last == <span class="number">100</span></span><br></pre></td></tr></table></figure>
 
           
         
@@ -627,7 +2102,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -674,7 +2149,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-count">24</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>

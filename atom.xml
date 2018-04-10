@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.bixiaofan.com/"/>
-  <updated>2018-04-07T02:29:26.000Z</updated>
+  <updated>2018-04-10T02:35:39.000Z</updated>
   <id>http://www.bixiaofan.com/</id>
   
   <author>
@@ -17,9 +17,382 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>「数据结构和算法」8-字典的运算</title>
-    <link href="http://www.bixiaofan.com/2018/04/07/%E3%80%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E3%80%8D8-%E5%AD%97%E5%85%B8%E7%9A%84%E8%BF%90%E7%AE%97/"/>
-    <id>http://www.bixiaofan.com/2018/04/07/「数据结构和算法」8-字典的运算/</id>
+    <title>类与对象-1-改变对象实例的字符串显示</title>
+    <link href="http://www.bixiaofan.com/2018/04/10/%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1-1-%E6%94%B9%E5%8F%98%E5%AF%B9%E8%B1%A1%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%98%BE%E7%A4%BA/"/>
+    <id>http://www.bixiaofan.com/2018/04/10/类与对象-1-改变对象实例的字符串显示/</id>
+    <published>2018-04-10T02:35:39.000Z</published>
+    <updated>2018-04-10T02:35:39.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;如果我们想改变对象实例的打印或显示输出，让它们更具可读性，应该怎么做呢？&lt;/p&gt;
+&lt;h2 id=&quot;解决方案&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="PythonCookbook" scheme="http://www.bixiaofan.com/categories/PythonCookbook/"/>
+    
+    
+      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
+    
+      <category term="notes" scheme="http://www.bixiaofan.com/tags/notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构和算法-20-合并多个字典或映射</title>
+    <link href="http://www.bixiaofan.com/2018/04/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-20-%E5%90%88%E5%B9%B6%E5%A4%9A%E4%B8%AA%E5%AD%97%E5%85%B8%E6%88%96%E6%98%A0%E5%B0%84/"/>
+    <id>http://www.bixiaofan.com/2018/04/09/数据结构和算法-20-合并多个字典或映射/</id>
+    <published>2018-04-09T01:53:27.000Z</published>
+    <updated>2018-04-09T01:53:27.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;现在有多个字典或者映射，你想将它们&lt;strong&gt;从逻辑上合并为一个单一的映射&lt;/strong&gt;后执行某些操作，
+        
+      
+    
+    </summary>
+    
+      <category term="PythonCookbook" scheme="http://www.bixiaofan.com/categories/PythonCookbook/"/>
+    
+    
+      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
+    
+      <category term="note" scheme="http://www.bixiaofan.com/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构和算法-19-转换并同时计算数据</title>
+    <link href="http://www.bixiaofan.com/2018/04/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-19-%E8%BD%AC%E6%8D%A2%E5%B9%B6%E5%90%8C%E6%97%B6%E8%AE%A1%E7%AE%97%E6%95%B0%E6%8D%AE/"/>
+    <id>http://www.bixiaofan.com/2018/04/09/数据结构和算法-19-转换并同时计算数据/</id>
+    <published>2018-04-09T01:53:14.000Z</published>
+    <updated>2018-04-09T01:53:14.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;如果我们需要在数据序列上执行聚集函数（比如 &lt;code&gt;sum()&lt;/code&gt; , &lt;code&gt;min()&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="PythonCookbook" scheme="http://www.bixiaofan.com/categories/PythonCookbook/"/>
+    
+    
+      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
+    
+      <category term="note" scheme="http://www.bixiaofan.com/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构和算法-18-映射名称到序列元素</title>
+    <link href="http://www.bixiaofan.com/2018/04/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-18-%E6%98%A0%E5%B0%84%E5%90%8D%E7%A7%B0%E5%88%B0%E5%BA%8F%E5%88%97%E5%85%83%E7%B4%A0/"/>
+    <id>http://www.bixiaofan.com/2018/04/09/数据结构和算法-18-映射名称到序列元素/</id>
+    <published>2018-04-09T01:52:57.000Z</published>
+    <updated>2018-04-09T01:52:57.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;假设我们有一段&lt;strong&gt;通过下标访问列表或元组中元素&lt;/strong&gt;的代码，有时这样的代码会难以阅读
+        
+      
+    
+    </summary>
+    
+      <category term="PythonCookbook" scheme="http://www.bixiaofan.com/categories/PythonCookbook/"/>
+    
+    
+      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
+    
+      <category term="note" scheme="http://www.bixiaofan.com/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构和算法-17-从字典中提取子集</title>
+    <link href="http://www.bixiaofan.com/2018/04/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-17-%E4%BB%8E%E5%AD%97%E5%85%B8%E4%B8%AD%E6%8F%90%E5%8F%96%E5%AD%90%E9%9B%86/"/>
+    <id>http://www.bixiaofan.com/2018/04/09/数据结构和算法-17-从字典中提取子集/</id>
+    <published>2018-04-09T01:52:35.000Z</published>
+    <updated>2018-04-09T01:52:35.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;我们想利用一个字典的子集构造一个新字典，怎么做呢？&lt;/p&gt;
+&lt;h2 id=&quot;解决方案&quot;&gt;&lt;a href=&quot;#解决方案&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="PythonCookbook" scheme="http://www.bixiaofan.com/categories/PythonCookbook/"/>
+    
+    
+      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
+    
+      <category term="note" scheme="http://www.bixiaofan.com/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构和算法-16-过滤序列元素</title>
+    <link href="http://www.bixiaofan.com/2018/04/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-16-%E8%BF%87%E6%BB%A4%E5%BA%8F%E5%88%97%E5%85%83%E7%B4%A0/"/>
+    <id>http://www.bixiaofan.com/2018/04/09/数据结构和算法-16-过滤序列元素/</id>
+    <published>2018-04-09T01:52:17.000Z</published>
+    <updated>2018-04-09T01:52:17.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="PythonCookbook" scheme="http://www.bixiaofan.com/categories/PythonCookbook/"/>
+    
+    
+      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
+    
+      <category term="note" scheme="http://www.bixiaofan.com/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构和算法-15-通过某个字段将记录分组</title>
+    <link href="http://www.bixiaofan.com/2018/04/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-15-%E9%80%9A%E8%BF%87%E6%9F%90%E4%B8%AA%E5%AD%97%E6%AE%B5%E5%B0%86%E8%AE%B0%E5%BD%95%E5%88%86%E7%BB%84/"/>
+    <id>http://www.bixiaofan.com/2018/04/09/数据结构和算法-15-通过某个字段将记录分组/</id>
+    <published>2018-04-09T01:52:03.000Z</published>
+    <updated>2018-04-09T01:52:03.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;有一个字典或者实例的序列，如：&lt;/p&gt;
+&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+      <category term="PythonCookbook" scheme="http://www.bixiaofan.com/categories/PythonCookbook/"/>
+    
+    
+      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
+    
+      <category term="note" scheme="http://www.bixiaofan.com/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构和算法-14-排序不支持原生比较的对象</title>
+    <link href="http://www.bixiaofan.com/2018/04/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-14-%E6%8E%92%E5%BA%8F%E4%B8%8D%E6%94%AF%E6%8C%81%E5%8E%9F%E7%94%9F%E6%AF%94%E8%BE%83%E7%9A%84%E5%AF%B9%E8%B1%A1/"/>
+    <id>http://www.bixiaofan.com/2018/04/09/数据结构和算法-14-排序不支持原生比较的对象/</id>
+    <published>2018-04-09T01:51:48.000Z</published>
+    <updated>2018-04-09T01:51:48.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;如果我们想排序类型相同的对象，但是他们不支持原生的比较操作，怎么办呢？&lt;/p&gt;
+&lt;h2 id=&quot;解决方案&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="PythonCookbook" scheme="http://www.bixiaofan.com/categories/PythonCookbook/"/>
+    
+    
+      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
+    
+      <category term="note" scheme="http://www.bixiaofan.com/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构和算法-13-通过某个关键字排序一个字典列表</title>
+    <link href="http://www.bixiaofan.com/2018/04/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-13-%E9%80%9A%E8%BF%87%E6%9F%90%E4%B8%AA%E5%85%B3%E9%94%AE%E5%AD%97%E6%8E%92%E5%BA%8F%E4%B8%80%E4%B8%AA%E5%AD%97%E5%85%B8%E5%88%97%E8%A1%A8/"/>
+    <id>http://www.bixiaofan.com/2018/04/09/数据结构和算法-13-通过某个关键字排序一个字典列表/</id>
+    <published>2018-04-09T01:51:29.000Z</published>
+    <updated>2018-04-09T01:51:29.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;如果我们有一个字典列表，如何根据&lt;strong&gt;某个或某几个字典字段&lt;/strong&gt;来排序这个列表呢？&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="PythonCookbook" scheme="http://www.bixiaofan.com/categories/PythonCookbook/"/>
+    
+    
+      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
+    
+      <category term="note" scheme="http://www.bixiaofan.com/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构和算法-12-序列中出现次数最多的元素</title>
+    <link href="http://www.bixiaofan.com/2018/04/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-12-%E5%BA%8F%E5%88%97%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%85%83%E7%B4%A0/"/>
+    <id>http://www.bixiaofan.com/2018/04/09/数据结构和算法-12-序列中出现次数最多的元素/</id>
+    <published>2018-04-09T01:51:05.000Z</published>
+    <updated>2018-04-09T01:51:05.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;怎样找出一个序列中&lt;strong&gt;出现次数最多&lt;/strong&gt;的元素呢？&lt;/p&gt;
+&lt;h2 id=&quot;解决方案&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="PythonCookbook" scheme="http://www.bixiaofan.com/categories/PythonCookbook/"/>
+    
+    
+      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
+    
+      <category term="note" scheme="http://www.bixiaofan.com/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构和算法-11-给切片命名</title>
+    <link href="http://www.bixiaofan.com/2018/04/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-11-%E7%BB%99%E5%88%87%E7%89%87%E5%91%BD%E5%90%8D/"/>
+    <id>http://www.bixiaofan.com/2018/04/09/数据结构和算法-11-给切片命名/</id>
+    <published>2018-04-09T01:50:42.000Z</published>
+    <updated>2018-04-09T01:50:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;假如我们的程序已经出现了一大堆已无法直视的硬编码切片下标，应该如何清理呢？&lt;/p&gt;
+&lt;h2 id=&quot;解决方案&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="PythonCookbook" scheme="http://www.bixiaofan.com/categories/PythonCookbook/"/>
+    
+    
+      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
+    
+      <category term="note" scheme="http://www.bixiaofan.com/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构和算法-10-删除序列中重复的元素并保持顺序不变</title>
+    <link href="http://www.bixiaofan.com/2018/04/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-10-%E5%88%A0%E9%99%A4%E5%BA%8F%E5%88%97%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E5%85%83%E7%B4%A0%E5%B9%B6%E4%BF%9D%E6%8C%81%E9%A1%BA%E5%BA%8F%E4%B8%8D%E5%8F%98/"/>
+    <id>http://www.bixiaofan.com/2018/04/09/数据结构和算法-10-删除序列中重复的元素并保持顺序不变/</id>
+    <published>2018-04-09T01:49:50.000Z</published>
+    <updated>2018-04-09T01:49:50.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;怎样在一个序列中删除重复的元素并保持元素顺序不变？&lt;/p&gt;
+&lt;h2 id=&quot;解决方案&quot;&gt;&lt;a href=&quot;#解决方案&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="PythonCookbook" scheme="http://www.bixiaofan.com/categories/PythonCookbook/"/>
+    
+    
+      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
+    
+      <category term="note" scheme="http://www.bixiaofan.com/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构和算法-9-查找两个字典的相同点</title>
+    <link href="http://www.bixiaofan.com/2018/04/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-9-%E6%9F%A5%E6%89%BE%E4%B8%A4%E4%B8%AA%E5%AD%97%E5%85%B8%E7%9A%84%E7%9B%B8%E5%90%8C%E7%82%B9/"/>
+    <id>http://www.bixiaofan.com/2018/04/09/数据结构和算法-9-查找两个字典的相同点/</id>
+    <published>2018-04-09T01:49:09.000Z</published>
+    <updated>2018-04-09T01:49:09.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;怎样在两个字典中寻找相同点呢？（比如相同的键或相同的值）&lt;/p&gt;
+&lt;h2 id=&quot;解决方案&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="PythonCookbook" scheme="http://www.bixiaofan.com/categories/PythonCookbook/"/>
+    
+    
+      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
+    
+      <category term="note" scheme="http://www.bixiaofan.com/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构和算法-8-字典的运算</title>
+    <link href="http://www.bixiaofan.com/2018/04/07/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-8-%E5%AD%97%E5%85%B8%E7%9A%84%E8%BF%90%E7%AE%97/"/>
+    <id>http://www.bixiaofan.com/2018/04/07/数据结构和算法-8-字典的运算/</id>
     <published>2018-04-07T02:29:26.000Z</published>
     <updated>2018-04-07T02:29:26.000Z</updated>
     
@@ -45,9 +418,9 @@
   </entry>
   
   <entry>
-    <title>「数据结构和算法」7-字典排序</title>
-    <link href="http://www.bixiaofan.com/2018/04/07/%E3%80%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E3%80%8D7-%E5%AD%97%E5%85%B8%E6%8E%92%E5%BA%8F/"/>
-    <id>http://www.bixiaofan.com/2018/04/07/「数据结构和算法」7-字典排序/</id>
+    <title>数据结构和算法-7-字典排序</title>
+    <link href="http://www.bixiaofan.com/2018/04/07/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-7-%E5%AD%97%E5%85%B8%E6%8E%92%E5%BA%8F/"/>
+    <id>http://www.bixiaofan.com/2018/04/07/数据结构和算法-7-字典排序/</id>
     <published>2018-04-07T01:41:15.000Z</published>
     <updated>2018-04-07T01:41:15.000Z</updated>
     
@@ -74,9 +447,9 @@
   </entry>
   
   <entry>
-    <title>「数据结构和算法」6-字典中的键映射多个值</title>
-    <link href="http://www.bixiaofan.com/2018/04/04/%E3%80%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E3%80%8D6-%E5%AD%97%E5%85%B8%E4%B8%AD%E7%9A%84%E9%94%AE%E6%98%A0%E5%B0%84%E5%A4%9A%E4%B8%AA%E5%80%BC/"/>
-    <id>http://www.bixiaofan.com/2018/04/04/「数据结构和算法」6-字典中的键映射多个值/</id>
+    <title>数据结构和算法-6-字典中的键映射多个值</title>
+    <link href="http://www.bixiaofan.com/2018/04/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-6-%E5%AD%97%E5%85%B8%E4%B8%AD%E7%9A%84%E9%94%AE%E6%98%A0%E5%B0%84%E5%A4%9A%E4%B8%AA%E5%80%BC/"/>
+    <id>http://www.bixiaofan.com/2018/04/04/数据结构和算法-6-字典中的键映射多个值/</id>
     <published>2018-04-04T01:37:52.000Z</published>
     <updated>2018-04-04T01:37:52.000Z</updated>
     
@@ -103,8 +476,8 @@
   
   <entry>
     <title>「数据结构和算法」5-实现一个优先级队列</title>
-    <link href="http://www.bixiaofan.com/2018/04/03/%E3%80%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E3%80%8D5-%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%BC%98%E5%85%88%E7%BA%A7%E9%98%9F%E5%88%97/"/>
-    <id>http://www.bixiaofan.com/2018/04/03/「数据结构和算法」5-实现一个优先级队列/</id>
+    <link href="http://www.bixiaofan.com/2018/04/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-5-%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E4%BC%98%E5%85%88%E7%BA%A7%E9%98%9F%E5%88%97/"/>
+    <id>http://www.bixiaofan.com/2018/04/03/数据结构和算法-5-实现一个优先级队列/</id>
     <published>2018-04-03T04:03:06.000Z</published>
     <updated>2018-04-03T04:03:06.000Z</updated>
     
@@ -130,38 +503,9 @@
   </entry>
   
   <entry>
-    <title>「类与对象」1-改变对象实例的字符串显示</title>
-    <link href="http://www.bixiaofan.com/2018/04/03/%E3%80%8C%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1%E3%80%8D1-%E6%94%B9%E5%8F%98%E5%AF%B9%E8%B1%A1%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%98%BE%E7%A4%BA/"/>
-    <id>http://www.bixiaofan.com/2018/04/03/「类与对象」1-改变对象实例的字符串显示/</id>
-    <published>2018-04-03T02:35:39.000Z</published>
-    <updated>2018-04-03T02:35:39.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;如果我们想改变对象实例的打印或显示输出，让它们更具可读性，应该怎么做呢？&lt;/p&gt;
-&lt;h2 id=&quot;解决方案&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="PythonCookbook" scheme="http://www.bixiaofan.com/categories/PythonCookbook/"/>
-    
-    
-      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
-    
-      <category term="notes" scheme="http://www.bixiaofan.com/tags/notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>「数据结构和算法」4-查找最大或最小的N个元素</title>
-    <link href="http://www.bixiaofan.com/2018/03/13/%E3%80%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E3%80%8D4-%E6%9F%A5%E6%89%BE%E6%9C%80%E5%A4%A7%E6%88%96%E6%9C%80%E5%B0%8F%E7%9A%84%20N%20%E4%B8%AA%E5%85%83%E7%B4%A0/"/>
-    <id>http://www.bixiaofan.com/2018/03/13/「数据结构和算法」4-查找最大或最小的 N 个元素/</id>
+    <title>数据结构和算法-4-查找最大或最小的N个元素</title>
+    <link href="http://www.bixiaofan.com/2018/03/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-4-%E6%9F%A5%E6%89%BE%E6%9C%80%E5%A4%A7%E6%88%96%E6%9C%80%E5%B0%8F%E7%9A%84%20N%20%E4%B8%AA%E5%85%83%E7%B4%A0/"/>
+    <id>http://www.bixiaofan.com/2018/03/13/数据结构和算法-4-查找最大或最小的 N 个元素/</id>
     <published>2018-03-13T13:02:30.000Z</published>
     <updated>2018-03-13T13:02:30.000Z</updated>
     
@@ -188,9 +532,9 @@
   </entry>
   
   <entry>
-    <title>「数据结构和算法」3.保留最后加入的固定个数的元素</title>
-    <link href="http://www.bixiaofan.com/2018/03/08/%E3%80%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E3%80%8D3-%E4%BF%9D%E7%95%99%E6%9C%80%E5%90%8E%E5%8A%A0%E5%85%A5%E7%9A%84%E5%9B%BA%E5%AE%9A%E4%B8%AA%E6%95%B0%E7%9A%84%E5%85%83%E7%B4%A0/"/>
-    <id>http://www.bixiaofan.com/2018/03/08/「数据结构和算法」3-保留最后加入的固定个数的元素/</id>
+    <title>数据结构和算法-3.保留最后加入的固定个数的元素</title>
+    <link href="http://www.bixiaofan.com/2018/03/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-3-%E4%BF%9D%E7%95%99%E6%9C%80%E5%90%8E%E5%8A%A0%E5%85%A5%E7%9A%84%E5%9B%BA%E5%AE%9A%E4%B8%AA%E6%95%B0%E7%9A%84%E5%85%83%E7%B4%A0/"/>
+    <id>http://www.bixiaofan.com/2018/03/08/数据结构和算法-3-保留最后加入的固定个数的元素/</id>
     <published>2018-03-08T13:02:30.000Z</published>
     <updated>2018-03-08T13:02:30.000Z</updated>
     
@@ -217,9 +561,9 @@
   </entry>
   
   <entry>
-    <title>「数据结构和算法」2.解压可迭代对象赋值给多个变量</title>
-    <link href="http://www.bixiaofan.com/2018/03/07/%E3%80%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E3%80%8D2-%E8%A7%A3%E5%8E%8B%E5%8F%AF%E8%BF%AD%E4%BB%A3%E5%AF%B9%E8%B1%A1%E8%B5%8B%E5%80%BC%E7%BB%99%E5%A4%9A%E4%B8%AA%E5%8F%98%E9%87%8F/"/>
-    <id>http://www.bixiaofan.com/2018/03/07/「数据结构和算法」2-解压可迭代对象赋值给多个变量/</id>
+    <title>数据结构和算法-2.解压可迭代对象赋值给多个变量</title>
+    <link href="http://www.bixiaofan.com/2018/03/07/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-2-%E8%A7%A3%E5%8E%8B%E5%8F%AF%E8%BF%AD%E4%BB%A3%E5%AF%B9%E8%B1%A1%E8%B5%8B%E5%80%BC%E7%BB%99%E5%A4%9A%E4%B8%AA%E5%8F%98%E9%87%8F/"/>
+    <id>http://www.bixiaofan.com/2018/03/07/数据结构和算法-2-解压可迭代对象赋值给多个变量/</id>
     <published>2018-03-07T13:02:30.000Z</published>
     <updated>2018-03-07T13:02:30.000Z</updated>
     
@@ -241,113 +585,6 @@
       <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
     
       <category term="notes" scheme="http://www.bixiaofan.com/tags/notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何修改macOS上的命令提示符</title>
-    <link href="http://www.bixiaofan.com/2018/01/28/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9macOS%E4%B8%8A%E7%9A%84%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6/"/>
-    <id>http://www.bixiaofan.com/2018/01/28/如何修改macOS上的命令提示符/</id>
-    <published>2018-01-28T04:15:54.000Z</published>
-    <updated>2018-01-28T04:15:54.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;命令提示符是什么？&quot;&gt;&lt;a href=&quot;#命令提示符是什么？&quot; class=&quot;headerlink&quot; title=&quot;命令提示符是什么？&quot;&gt;&lt;/a&gt;命令提示符是什么？&lt;/h2&gt;&lt;p&gt;当我们打开一个终端时首先看到的就是 Bash
-        
-      
-    
-    </summary>
-    
-      <category term="了不起的macOS" scheme="http://www.bixiaofan.com/categories/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84macOS/"/>
-    
-    
-      <category term="macOS" scheme="http://www.bixiaofan.com/tags/macOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搞清楚Python中的模块-包-库-应用程序</title>
-    <link href="http://www.bixiaofan.com/2018/01/24/%E6%90%9E%E6%B8%85%E6%A5%9APython%E4%B8%AD%E7%9A%84%E6%A8%A1%E5%9D%97-%E5%8C%85-%E5%BA%93-%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/"/>
-    <id>http://www.bixiaofan.com/2018/01/24/搞清楚Python中的模块-包-库-应用程序/</id>
-    <published>2018-01-24T01:41:16.000Z</published>
-    <updated>2018-04-04T01:41:16.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Python
-        
-      
-    
-    </summary>
-    
-      <category term="品味Python" scheme="http://www.bixiaofan.com/categories/%E5%93%81%E5%91%B3Python/"/>
-    
-    
-      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>「数据结构和算法」1.解压序列然后赋值给多个变量</title>
-    <link href="http://www.bixiaofan.com/2018/01/21/%E3%80%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95%E3%80%8D1-%E8%A7%A3%E5%8E%8B%E5%BA%8F%E5%88%97%E7%84%B6%E5%90%8E%E8%B5%8B%E5%80%BC%E7%BB%99%E5%A4%9A%E4%B8%AA%E5%8F%98%E9%87%8F/"/>
-    <id>http://www.bixiaofan.com/2018/01/21/「数据结构和算法」1-解压序列然后赋值给多个变量/</id>
-    <published>2018-01-21T09:24:00.000Z</published>
-    <updated>2018-01-21T09:24:00.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;有一个&lt;strong&gt;元组&lt;/strong&gt;或&lt;strong&gt;序列&lt;/strong&gt;包含了 N 个元素，如：a_list
-        
-      
-    
-    </summary>
-    
-      <category term="PythonCookbook" scheme="http://www.bixiaofan.com/categories/PythonCookbook/"/>
-    
-    
-      <category term="python" scheme="http://www.bixiaofan.com/tags/python/"/>
-    
-      <category term="notes" scheme="http://www.bixiaofan.com/tags/notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>显示命令的帮助手册-man</title>
-    <link href="http://www.bixiaofan.com/2018/01/21/%E6%98%BE%E7%A4%BA%E5%91%BD%E4%BB%A4%E7%9A%84%E5%B8%AE%E5%8A%A9%E6%89%8B%E5%86%8C-man/"/>
-    <id>http://www.bixiaofan.com/2018/01/21/显示命令的帮助手册-man/</id>
-    <published>2018-01-21T06:22:57.000Z</published>
-    <updated>2018-01-21T06:22:57.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;man 是 manual（手册）的缩写，用来快速查询某个命令的 man-pages（帮助手册页面），并格式化显示。&lt;/p&gt;
-&lt;h3 id=&quot;常用方法&quot;&gt;&lt;a href=&quot;#常用方法&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="每天一个Linux命令" scheme="http://www.bixiaofan.com/categories/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AALinux%E5%91%BD%E4%BB%A4/"/>
-    
-    
-      <category term="linux" scheme="http://www.bixiaofan.com/tags/linux/"/>
     
   </entry>
   
